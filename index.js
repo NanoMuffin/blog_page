@@ -73,9 +73,9 @@ function choosep3() {
 };
 
 //function shrinkText(){
-  if (body_selector.style.innerWidth == "800px") {
-    textToShrink.style.fontSize = "0.6rem";
-  }
+  //if (body_selector.style.innerWidth == "800px") {
+    //textToShrink.style.fontSize = "0.6rem";
+  //}
 
 
 }
