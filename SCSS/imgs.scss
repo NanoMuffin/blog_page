@@ -1,0 +1,35 @@
+/* .photo{
+    position: absolute;
+    right: 50%;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: 85%;
+    }
+ */
+
+ .photo{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: auto;
+    height: 85%;
+    }
+    
+ .vk_picture{
+        height: $picture_width;
+        width: $picture_width;
+        margin: auto;
+      }
+      
+      .tg_picture{
+        height: $picture_width;
+        width: $picture_width;
+        margin: auto;
+      }
+      
+      .hh_picture{
+        height: $picture_width;
+        width: $picture_width;
+        margin: auto;
+      }

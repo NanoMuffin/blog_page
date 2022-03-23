@@ -1,0 +1,272 @@
+@import "SCSS/Mixins";
+@import "SCSS/Variebles";
+@import "SCSS/imgs";
+
+// Media queries located in Mixins
+
+body{
+    margin:0px;
+  }
+  
+  // Header
+  .head_div{
+  position: relative;
+  width: 100vw;
+  height: $head_div_height;
+  left: 0px;
+  top: 0px;
+  background-color: $header_color;
+  margin: 0;
+  }
+  
+  
+  .name_text{
+  position: absolute;
+  height: inherit;
+  margin: 0;
+  width: 100%;
+  padding-left: 3.43rem;
+  padding-top: 1.2rem;
+  
+  
+  @include mainHeaderText() }
+  
+  .role_text{
+  position: absolute;
+  padding-left: 3.12rem;
+  padding-top: 0.8rem;
+  margin: 0;
+  
+  font-family: $secondary_font;
+  font-style: $secondary_font_style;
+  font-weight: $secondary_font_weight;
+  font-size: 1rem;
+  }
+  
+  //Main block with photo and buttons
+  .main_div{
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
+  overflow: none;
+  }
+  
+  //photo itself is located in imgs file
+  .photo_box{
+  position: relative;
+  width: 50vw;
+  height: 100%;
+  margin: 0 0;
+  background-color: $header_text_color;
+  text-align: center;
+  }
+  
+
+  //Skills container
+  .skillsandprojects_container{
+    position: relative;
+    bottom: 100%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    background-color: white;
+    border: none;
+  }
+
+   //Projects container
+  .skillsandprojects_container2{
+    position: relative;
+    bottom:100%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    background-color: white;
+    border: none;
+  }
+
+
+  .skills_container_row{
+    width: 100%;
+    height: $skills_head-row;
+  }
+
+  .skillsandprojects_container_row{
+    width: 100%;
+    height: 50%;
+  }
+
+  // row for float table in skills section
+  .skills_container_row2{
+    width: 100%;
+    height: calc((100% - #{$skills_head-row})/4);
+    border: none;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+   // row for float table in projects section
+  .skills_container_row3{
+    width: 100%;
+    height: calc((100% - #{$skills_head-row})/4);
+    border: none;
+  }
+
+  // Section in float table for Skills container
+  .skillsandprojects-col{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    background-color: white;
+    text-align: center;
+  }
+
+  // Section in float table for Projects container
+  .skillsandprojects-col-one{
+    width: inherit;
+    height: inherit;
+    float: left;
+    background-color: $header_text_color;
+    text-align: left;
+    @include sectionHeaderText();
+  }
+
+  //Used for header row line either in Skills and Projects containers
+  .skillsandprojects-col-header{
+    width: inherit;
+    height: inherit;
+    float: left;
+    background-color: $header_text_color;
+    text-align: center;
+    @include sectionHeaderText();
+  }
+
+  
+  
+
+  .button_test{
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  
+  
+  
+  .button_text{
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: black;
+    margin: 0;
+  
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  
+  }
+  
+  .projects_section{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: $header_text_color;
+  }
+  
+  .projects_header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 auto auto 0;
+  
+  
+    @include sectionHeaderText();
+  
+  }
+  
+  
+  // Used in Index js to style buttons
+  .button_click{
+    border-width: 215px;
+    border-radius: 40px;
+    background-color:black;
+    color: white;
+  }
+  
+  
+  // Contacts section
+  .contacts_section{
+    position: relative;
+    bottom: calc(100vh - (#{$main_div_height} + #{$head_div_height} + #{$contact_section_height}));
+    width: 100vw;
+    height: $contact_section_height;
+    //background-color: blue; }
+    //background-color: $header_text_color; 
+  }
+
+
+    .contacts_header_container{
+      width: 100%;
+      height: $contacts_section_header_height;
+      text-align: center;
+    }
+  
+  .contact_header{
+    text-align: center;
+    height: auto;
+    width: inherit;
+    //height: $contacts_section_header_height;
+    transform: translate(-25%);
+    margin: 0 auto;
+  
+  
+    @include sectionHeaderText();
+  
+  }
+
+  .contacts_section_row{
+    position: absolute;
+    top: $contacts_section_header_height;
+    padding-top: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height:calc(100% - #{$contacts_section_header_height});
+    margin: 0 auto;
+    width: calc(#{$picture_width} * 4);
+    //background-color: yellow;
+
+    @include clearFix
+  }
+
+  .contacts_section_col{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: calc((#{$picture_width} * 4) / 3);
+    text-align: center;
+    float: left;
+    //background-color: orange;
+    margin:0 auto;
+  }
+  
+
+
+  .learn_more{
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+  @include respond(tab-land);
+  @include respond(phone);
+  @include respond(ipadpro);
+  @include respond(ipad_port);
+  @include respond(ipadpro_port);
