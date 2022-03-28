@@ -54,7 +54,7 @@ body {
   width: 100%;
   padding-left: 3.43rem;
   padding-top: 1.2rem;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
@@ -149,7 +149,7 @@ body {
   float: left;
   background-color: white;
   text-align: left;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
@@ -162,7 +162,7 @@ body {
   float: left;
   background-color: white;
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
@@ -203,7 +203,7 @@ body {
   height: auto;
   text-align: center;
   padding: 0 auto auto 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
@@ -236,7 +236,7 @@ body {
   width: inherit;
   transform: translate(-25%);
   margin-bottom: 0.2rem;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
