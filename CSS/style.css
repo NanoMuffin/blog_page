@@ -233,8 +233,7 @@ body {
 .contact_header {
   text-align: center;
   height: auto;
-  width: inherit;
-  transform: translate(-25%);
+  width: 100vw;
   margin-bottom: 0.2rem;
   display: block;
   font-family: "Roboto Condensed", sans-serif;

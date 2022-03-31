@@ -219,9 +219,9 @@ body{
   .contact_header{
     text-align: center;
     height: auto;
-    width: inherit;
+    width: 100vw;
     //height: $contacts_section_header_height;
-    transform: translate(-25%);
+    //transform: translate(-25%);
     //margin: 0 auto;
     margin-bottom: 0.2rem;
     display: block;
