@@ -598,7 +598,7 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     width: auto;
-    height: 65%;
+    height: 45%;
   }
 
   .vk_picture {
@@ -659,7 +659,7 @@ body {
   }
 
   .button_text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .skillsandprojects_container2 {
