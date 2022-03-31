@@ -272,3 +272,6 @@ body{
   @include respond(ipad_port);
   @include respond(ipadpro12_port);
   @include respond(mac13);
+  @include respond(ipad11pro_land);
+  @include respond(ipad11pro_port);
+
