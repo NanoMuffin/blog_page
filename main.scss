@@ -224,6 +224,7 @@ body{
     transform: translate(-25%);
     //margin: 0 auto;
     margin-bottom: 0.2rem;
+    display: block;
   
   
     @include sectionHeaderText();
