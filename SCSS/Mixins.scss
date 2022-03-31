@@ -443,7 +443,7 @@
 
         @if $breakpoint == ipad11pro_port {
 
-            @media screen and (width: 834px) and (max-height: 112px) {
+            @media screen and (height: 834px) and (width: 112px) {
     
 
                 .name_text{
@@ -567,5 +567,11 @@
             }
                 
             }
+
+            @if $breakpoint == ipad11pro_land {
+
+                @media screen and (width: 834px) and (height: 112px) {
+                    .button_text {font-size: 1rem;}
+                }
 
 }
