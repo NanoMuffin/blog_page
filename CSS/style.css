@@ -236,6 +236,7 @@ body {
   width: inherit;
   transform: translate(-25%);
   margin-bottom: 0.2rem;
+  display: block;
   font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
   font-weight: 700;
