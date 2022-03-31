@@ -267,8 +267,8 @@ body{
     text-align: center;
   }
 
-  @include respond(tab-land);
   @include respond(phone);
-  @include respond(ipadpro);
+  @include respond(ipadLand);
   @include respond(ipad_port);
-  @include respond(ipadpro_port);
+  @include respond(ipadpro12_port);
+  @include respond(mac13);

@@ -278,84 +278,6 @@ body {
   text-align: center;
 }
 
-/*  @if $breakpoint == tab-land {
-     @media screen and (max-width: 1366px) and (max-height: 1024px) {
-
-         .photo {
-             height: 65%;
-         }
-
-         .contacts_section_col{
-             width: $picture_width;
-         }
-
-         .button_text {
-             font-size: 1.2rem;
-         }
-
-         .contacts_section_row{
-             width: calc(($picture_width * 3));
-         }
-
-         .vk_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .tg_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .hh_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-     }
- }  */
-/*  @if $breakpoint == tab-land {
-     @media screen and (max-width: 1366px) and (max-height: 1024px) {
-
-         .photo {
-             height: 65%;
-         }
-
-         .contacts_section_col{
-             width: $picture_width;
-         }
-
-         .button_text {
-             font-size: 1.2rem;
-         }
-
-         .contacts_section_row{
-             width: calc(($picture_width * 3));
-         }
-
-         .vk_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .tg_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .hh_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-     }
- }  */
 @media screen and (max-width: 573px) and (max-height: 926px) {
   .name_text {
     font-size: 1.5rem;
@@ -451,45 +373,6 @@ body {
     border: none;
   }
 }
-/*  @if $breakpoint == tab-land {
-     @media screen and (max-width: 1366px) and (max-height: 1024px) {
-
-         .photo {
-             height: 65%;
-         }
-
-         .contacts_section_col{
-             width: $picture_width;
-         }
-
-         .button_text {
-             font-size: 1.2rem;
-         }
-
-         .contacts_section_row{
-             width: calc(($picture_width * 3));
-         }
-
-         .vk_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .tg_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .hh_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-     }
- }  */
 @media screen and (width: 1024px) and (height: 768px) {
   .button_text {
     font-size: 0.9rem;
@@ -533,45 +416,6 @@ body {
     margin: auto;
   }
 }
-/*  @if $breakpoint == tab-land {
-     @media screen and (max-width: 1366px) and (max-height: 1024px) {
-
-         .photo {
-             height: 65%;
-         }
-
-         .contacts_section_col{
-             width: $picture_width;
-         }
-
-         .button_text {
-             font-size: 1.2rem;
-         }
-
-         .contacts_section_row{
-             width: calc(($picture_width * 3));
-         }
-
-         .vk_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .tg_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .hh_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-     }
- }  */
 @media screen and (width: 768px) and (height: 1024px) {
   .name_text {
     font-size: 1.5rem;
@@ -681,45 +525,6 @@ body {
     margin-top: 6rem;
   }
 }
-/*  @if $breakpoint == tab-land {
-     @media screen and (max-width: 1366px) and (max-height: 1024px) {
-
-         .photo {
-             height: 65%;
-         }
-
-         .contacts_section_col{
-             width: $picture_width;
-         }
-
-         .button_text {
-             font-size: 1.2rem;
-         }
-
-         .contacts_section_row{
-             width: calc(($picture_width * 3));
-         }
-
-         .vk_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .tg_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-           .hh_picture{
-             height: $picture_width;
-             width: $picture_width;
-             margin: auto;
-           }
-
-     }
- }  */
 @media screen and (width: 1024px) and (height: 1366px) {
   .name_text {
     font-size: 2.5rem;
@@ -833,6 +638,11 @@ body {
     height: 39px;
     border: none;
     margin-bottom: 1rem;
+  }
+}
+@media screen and (width: 1366px) and (max-height: 768px) {
+  .button_text {
+    font-size: 0.9rem;
   }
 }
 
