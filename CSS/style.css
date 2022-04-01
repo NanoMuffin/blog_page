@@ -35,6 +35,7 @@
 
 body {
   margin: 0px;
+  font-size: 100%;
 }
 
 .head_div {
@@ -234,6 +235,7 @@ body {
   text-align: center;
   height: auto;
   width: 100vw;
+  transform: translate(-25%);
   margin-bottom: 0.2rem;
   display: block;
   font-family: "Roboto Condensed", sans-serif;
