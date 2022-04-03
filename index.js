@@ -73,3 +73,10 @@ function choosep3() {
     selectedProject = selectedProject + 1
   } 
 };
+
+var isChrome = !!window.chrome;
+
+if (isChrome === true) {
+var header = document.querySelector(".contact_header")
+header.style.transform = "translate(-25%)";
+};

@@ -1,0 +1,34 @@
+$header_color: #393E46;
+$header_text_color: white;
+$main_text_color: black;
+
+// varibles used to calculate blocks height
+$head_div_height: 5rem;
+$contact_section_height: 18rem;
+$skills_head-row: 6.4rem;
+$contacts_section_header_height: 6rem;
+$main_div_height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
+
+
+//varibles for grid
+$space_horizontal: 1.5rem;
+$space_vertical: 1rem;
+
+// declared in body
+$rem_size: 10px;
+
+// used for main heading
+$header_font: 'Roboto Condensed', sans-serif;
+$header_font_style: oblique;
+$header_font_weight: 700;
+
+// used for buttons and sub-heading in header
+$secondary_font: "Roboto Mono";
+$secondary_font_style: normal;
+$secondary_font_weight: bold;
+$button_text_weight: 700;
+
+//used for calculating pictures size
+$picture_width: 6rem;
+//$picture_width: 3.4rem;
+//$picture_width: 6.875rem;
