@@ -1,6 +1,7 @@
 @import "SCSS/Mixins";
 @import "SCSS/Variebles";
 @import "SCSS/imgs";
+@import "SCSS/Slider";
 
 // Media queries located in Mixins
 
@@ -266,4 +267,6 @@ body{
   @include respond(phone);
   @include respond(mac13);
   @include respond(mac15);
+  @include respond(mac16);
+  @include respond(tab_land);
 

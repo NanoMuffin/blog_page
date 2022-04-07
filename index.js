@@ -75,8 +75,10 @@ function choosep3() {
 };
 
 var isChrome = !!window.chrome;
+var screenWidth = window.innerWidth
 
-if (isChrome === true) {
+if (isChrome === true & screenWidth > 1024) {
+  if (screenWidth > 1024){
 var header = document.querySelector(".contact_header")
-header.style.transform = "translate(-25%)";
+header.style.transform = "translate(-25%)"}
 };
