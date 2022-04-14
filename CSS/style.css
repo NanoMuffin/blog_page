@@ -13,6 +13,7 @@
   margin-top: 50px;
   width: auto;
   height: 85%;
+  z-index: 1;
 }
 
 .vk_picture {
@@ -97,6 +98,44 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0%;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 30%;
+    transform: scale(1.25);
+  }
+}
+@keyframes pulse_photo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes pulse_photo_onload {
+  0% {
+    opacity: 80;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
+}
+@keyframes main_block_animation {
+  0% {
+    opacity: 30;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
+}
 body {
   margin: 0px;
   font-size: 100%;
@@ -110,6 +149,7 @@ body {
   top: 0px;
   background-color: #393E46;
   margin: 0;
+  animation: main_block_animation 2s ease-out forwards;
 }
 
 .name_text {
@@ -153,6 +193,46 @@ body {
   text-align: center;
 }
 
+.baby_box {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 517.3px;
+  height: 85%;
+  z-index: 1;
+  scale: 0.9;
+  animation: pulse_photo_onload 2s ease-out forwards;
+}
+
+.baby_box:hover {
+  animation: pulse_photo 4s infinite;
+}
+
+.baby_box::after {
+  content: "";
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: 85%;
+  border-radius: 50%;
+  border-width: 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: none;
+  border-bottom-style: none;
+  opacity: 0%;
+  z-index: -1;
+}
+
+.baby_box:hover::after {
+  content: "";
+  animation: pulse 4s infinite;
+}
+
 .skillsandprojects_container {
   position: relative;
   bottom: 100%;
@@ -162,6 +242,7 @@ body {
   margin: 0;
   background-color: white;
   border: none;
+  animation: main_block_animation 2s ease-out forwards;
 }
 
 .skillsandprojects_container2 {
@@ -173,6 +254,22 @@ body {
   margin: 0;
   background-color: white;
   border: none;
+  animation: main_block_animation 2s ease-out forwards;
+}
+
+p {
+  line-height: normal;
+}
+
+.secondLineTextClass {
+  line-height: 70%;
+}
+
+.secondLineText {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .skills_container_row {
@@ -287,6 +384,7 @@ body {
   bottom: calc(100vh - (calc(100vh - (5rem + 18rem)) + 5rem + 18rem));
   width: 100vw;
   height: 18rem;
+  animation: main_block_animation 2s ease-out forwards;
 }
 
 .contacts_header_container {
@@ -466,7 +564,7 @@ body {
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .button_text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 

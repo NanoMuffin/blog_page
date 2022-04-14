@@ -12,6 +12,25 @@ var skill4 =  buttonsArray[3]
 var skill5 =  buttonsArray[4]
 var skill6 =  buttonsArray[5]
 
+function onLoad() {
+  
+  function makeIt() {
+  skill1.classList.toggle("button_click")
+  skill2.classList.toggle("button_click")
+  skill3.classList.toggle("button_click")
+  skill4.classList.toggle("button_click")
+  skill5.classList.toggle("button_click")
+  skill6.classList.toggle("button_click")
+  project1.classList.toggle("button_click")
+  project2.classList.toggle("button_click")
+  project3.classList.toggle("button_click")}
+
+  setTimeout(() => makeIt(), 2000);
+}
+
+onLoad();
+
+
 var body_selector = document.querySelector("body")
 var textToShrink = document.querySelector(".button_text")
 
@@ -73,6 +92,7 @@ function choosep3() {
     selectedProject = selectedProject + 1
   } 
 };
+
 
 var isChrome = !!window.chrome;
 var screenWidth = window.innerWidth

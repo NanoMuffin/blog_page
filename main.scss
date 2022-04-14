@@ -2,6 +2,7 @@
 @import "SCSS/Variebles";
 @import "SCSS/imgs";
 @import "SCSS/Slider";
+@import "SCSS/animations";
 
 // Media queries located in Mixins
 
@@ -19,6 +20,7 @@ body{
   top: 0px;
   background-color: $header_color;
   margin: 0;
+  animation: main_block_animation 2s ease-out forwards; 
   }
   
   
@@ -62,6 +64,52 @@ body{
   background-color: $header_text_color;
   text-align: center;
   }
+
+  .baby_box {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 517.3px;
+    height: 85%;
+    //background-color: black;
+    z-index: 1;
+    scale: 0.9;
+    animation: pulse_photo_onload 2s ease-out forwards; }
+
+    
+  .baby_box:hover{
+    animation: pulse_photo 4s infinite;
+
+  }
+
+  //baby_box used for photo pulsing animation
+  .baby_box::after {
+    content: "";
+    position: absolute;
+    margin-top: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 85%;
+    //background-color: black;
+    border-radius: 50%;
+    border-width: 1px;
+    border-left-style: solid;
+    border-right-style:solid;
+    border-top-style: none;
+    border-bottom-style: none;
+    opacity: 0%;
+    z-index: -1;
+
+  }
+
+  .baby_box:hover::after{
+    content: "";
+    animation: pulse 4s infinite;
+  }  
+
   
 
   //Skills container
@@ -74,6 +122,7 @@ body{
     margin: 0;
     background-color: white;
     border: none;
+    animation: main_block_animation 2s ease-out forwards;
   }
 
    //Projects container
@@ -86,6 +135,21 @@ body{
     margin: 0;
     background-color: white;
     border: none;
+    animation: main_block_animation 2s ease-out forwards;
+  }
+
+  p {
+    line-height: normal;
+  }
+
+  .secondLineTextClass{
+
+    line-height: 70%;
+
+  }
+
+  .secondLineText {
+    @include secondLineText
   }
 
 
@@ -208,7 +272,8 @@ body{
     width: 100vw;
     height: $contact_section_height;
     //background-color: blue; }
-    //background-color: $header_text_color; 
+    //background-color: $header_text_color;
+    animation: main_block_animation 2s ease-out forwards; 
   }
 
 

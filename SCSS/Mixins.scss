@@ -29,6 +29,13 @@
     font-size: 2rem;
     color: $main_text_color; }
 
+    @mixin secondLineText {
+        font-family: $secondary_font;
+        font-style: $secondary_font_style;
+        font-weight: $secondary_font_weight;
+        font-size: 0.9rem;
+    }
+
     @mixin respond ($breakpoint){
 
         
