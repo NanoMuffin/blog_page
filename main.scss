@@ -9,18 +9,21 @@
 body{
     margin:0px;
     font-size: 100%;
+    height: 520vh;
+    width: 100vw;
+    scroll-behavior: smooth;
   }
   
   // Header
   .head_div{
-  position: relative;
+  position: sticky;
   width: 100vw;
   height: $head_div_height;
   left: 0px;
   top: 0px;
   background-color: $header_color;
   margin: 0;
-  animation: main_block_animation 2s ease-out forwards; 
+  animation: main_block_animation 2s ease-out forwards 
   }
   
   
@@ -74,10 +77,10 @@ body{
     //background-color: black;
     z-index: 1;
     scale: 0.9;
-    animation: pulse_photo_onload 2s ease-out forwards; }
+    animation: pulse_photo_onload 2s ease-out forwards;
+   }
 
-    
-  .baby_box:hover{
+   .baby_box:hover{
     animation: pulse_photo 4s infinite;
 
   }
@@ -110,6 +113,7 @@ body{
     animation: pulse 4s infinite;
   }  
 
+
   
 
   //Skills container
@@ -117,7 +121,7 @@ body{
     position: relative;
     bottom: 100%;
     left: 50%;
-    width: 50%;
+    width: 50vw;
     height: 50%;
     margin: 0;
     background-color: white;
@@ -135,7 +139,7 @@ body{
     margin: 0;
     background-color: white;
     border: none;
-    animation: main_block_animation 2s ease-out forwards;
+   animation: main_block_animation 2s ease-out forwards;
   }
 
   p {
@@ -235,6 +239,10 @@ body{
     outline: none;
   
   }
+
+  .button_test:active {
+    animation: pulse_photo 1s ease-out;
+  }
   
   .projects_section{
     position: relative;
@@ -320,7 +328,123 @@ body{
     float: left;
     margin:0 auto;
   }
+
+
+  .skill_box1{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20vh;
+    height: 485px;
+    width: 910px;
+    background-color: #ffffff;
+    background-image: url("../images/skill_description_box.svg");
+    z-index: -1;
+  }
+
+  .skill_boxes_heading {
+    text-align: center;
+    @include sectionHeaderText;
+    color: #ffffff;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .skill_box_iconbox {
+    position: absolute;
+    top: 54px;
+    width: 50%;
+    height: 90%;
+    left: 50%;
+  }
   
+  .skill_box_icon {
+    height: 60%;
+    width: 383px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/project planning icon.svg");
+  }
+
+  .skill_box_icon2 {
+    height: 48%;
+    width: 383px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/team_management.svg");
+  }
+
+  .skill_box_icon3 {
+    height: 48%;
+    width: 356px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/ipad icon.svg");
+  }
+
+  .skill_box_icon4 {
+    height: 44.5%;
+    width: 201px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/dev advocate icon.svg");
+  }
+
+  .skill_box_icon5 {
+    height: 38.5%;
+    width: 261px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/manual testing icon.svg");
+  }
+
+  .skill_box_icon6 {
+    height: 37%;
+    width: 261px;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-60%);
+    background-image: url("../images/research icon.svg");
+  }
+
+  .skill_box_descriptiontext {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: black;
+    margin: 0; }
+
+    .skill_box_descriptionbox{
+    
+      margin-top: 15%;
+      margin-left: 15px;
+
+    }
+
+    .skill_box_descriptionbox2{
+    
+      margin-top: 13%;
+      margin-left: 15px;
+
+    }
+
+    .footer {
+      width: 100vw;
+      background-color: $header_color;
+      height: $head_div_height;
+      margin-top: 10%;
+    }
 
 
   .learn_more{

@@ -139,10 +139,13 @@ input:checked + .slider:before {
 body {
   margin: 0px;
   font-size: 100%;
+  height: 520vh;
+  width: 100vw;
+  scroll-behavior: smooth;
 }
 
 .head_div {
-  position: relative;
+  position: sticky;
   width: 100vw;
   height: 5rem;
   left: 0px;
@@ -237,7 +240,7 @@ body {
   position: relative;
   bottom: 100%;
   left: 50%;
-  width: 50%;
+  width: 50vw;
   height: 50%;
   margin: 0;
   background-color: white;
@@ -352,6 +355,10 @@ p {
   outline: none;
 }
 
+.button_test:active {
+  animation: pulse_photo 1s ease-out;
+}
+
 .projects_section {
   position: relative;
   height: 50%;
@@ -435,6 +442,123 @@ p {
   margin: 0 auto;
 }
 
+.skill_box1 {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20vh;
+  height: 485px;
+  width: 910px;
+  background-color: #ffffff;
+  background-image: url("../images/skill_description_box.svg");
+  z-index: -1;
+}
+
+.skill_boxes_heading {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+  color: #ffffff;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.skill_box_iconbox {
+  position: absolute;
+  top: 54px;
+  width: 50%;
+  height: 90%;
+  left: 50%;
+}
+
+.skill_box_icon {
+  height: 60%;
+  width: 383px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/project planning icon.svg");
+}
+
+.skill_box_icon2 {
+  height: 48%;
+  width: 383px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/team_management.svg");
+}
+
+.skill_box_icon3 {
+  height: 48%;
+  width: 356px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/ipad icon.svg");
+}
+
+.skill_box_icon4 {
+  height: 44.5%;
+  width: 201px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/dev advocate icon.svg");
+}
+
+.skill_box_icon5 {
+  height: 38.5%;
+  width: 261px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/manual testing icon.svg");
+}
+
+.skill_box_icon6 {
+  height: 37%;
+  width: 261px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-60%);
+  background-image: url("../images/research icon.svg");
+}
+
+.skill_box_descriptiontext {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: black;
+  margin: 0;
+}
+
+.skill_box_descriptionbox {
+  margin-top: 15%;
+  margin-left: 15px;
+}
+
+.skill_box_descriptionbox2 {
+  margin-top: 13%;
+  margin-left: 15px;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #393E46;
+  height: 5rem;
+  margin-top: 10%;
+}
+
 .learn_more {
   width: auto;
   height: auto;
@@ -459,6 +583,7 @@ p {
   }
 
   .contact_header {
+    font-size: 1.5rem;
     text-align: center;
     height: auto;
     width: 100vw;
@@ -467,7 +592,12 @@ p {
 
   .photo_box {
     height: 40%;
-    width: 100vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  .baby_box {
+    width: 100%;
   }
 
   .vk_picture {
@@ -533,6 +663,99 @@ p {
     width: 100%;
     height: 39px;
     border: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .skill_box1 {
+    margin-top: 20vh;
+    width: 290px;
+    background-image: url("../images/skillbox_frame_mobile.svg");
+  }
+
+  .skill_box_descriptionbox {
+    margin-top: 15%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .skill_box_descriptionbox2 {
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .skill_box_descriptiontext {
+    text-align: center;
+    font-size: 0.85rem;
+    width: auto;
+  }
+
+  .skill_boxes_heading {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    padding-left: 70px;
+  }
+
+  .skill_box_iconbox {
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    height: 90%;
+    left: 0;
+  }
+
+  .skill_box_icon {
+    background-image: url("../images/project planning icon_mobile.svg");
+    height: 36%;
+    width: 220px;
+    margin-top: 110%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill_box_icon2 {
+    background-image: url("../images/team_management_mobile.svg");
+    height: 32%;
+    width: 250px;
+    margin-top: 120%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill_box_icon3 {
+    background-image: url("../images/ipad icon_mobile.svg");
+    height: 31%;
+    width: 230px;
+    margin-top: 110%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill_box_icon4 {
+    background-image: url("../images/dev advocate icon_mobile.svg");
+    height: 45%;
+    width: 201px;
+    margin-top: 110%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill_box_icon5 {
+    background-image: url("../images/manual testing icon_mobile.svg");
+    height: 30%;
+    width: 202.1px;
+    margin-top: 110%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill_box_icon6 {
+    background-image: url("../images/research icon_mobile.svg");
+    height: 27%;
+    width: 191px;
+    margin-top: 110%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1300px) and (max-height: 750px) {

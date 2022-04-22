@@ -64,6 +64,7 @@
                 }
 
                 .contact_header{
+                    font-size: 1.5rem;
                     text-align: center;
                     height: auto;
                     width: 100vw;
@@ -71,9 +72,13 @@
 
                 .photo_box{
                     height: 40%;
-                    width: 100vw;
+                    width: 100%;
+                    text-align: center;
                 }
                 
+                .baby_box {
+                    width: 100%;
+                }
 
                 .vk_picture{
                     width: 3.437rem;
@@ -143,6 +148,106 @@
                   }
                 
             }
+
+            @media screen and (max-width: 900px) {
+
+                .skill_box1{
+                    margin-top: 20vh;
+                    width: 290px;
+                    background-image: url("../images/skillbox_frame_mobile.svg");
+                }
+
+                .skill_box_descriptionbox{
+    
+                    margin-top: 15%;
+                    margin-left: 15px;
+                    margin-right: 15px;
+              
+                  }
+
+                  .skill_box_descriptionbox2{
+    
+                    margin-top: 15%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+              
+                  }
+
+                .skill_box_descriptiontext{
+                    text-align: center;
+                    font-size: 0.85rem;
+                    width: auto;
+                }
+
+                .skill_boxes_heading{
+                    font-size: 1.2rem;
+                    padding-top: 20px;
+                    padding-left: 70px;
+                }
+
+                .skill_box_iconbox {
+                    position: absolute;
+                    top: 54px;
+                    width: 100%;
+                    height: 90%;
+                    left: 0; }
+                    
+                    .skill_box_icon {
+                        background-image: url("../images/project planning icon_mobile.svg");
+                        height: 36%;
+                        width: 220px;
+                        margin-top: 110%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .skill_box_icon2 {
+                        background-image: url("../images/team_management_mobile.svg");
+                        height: 32%;
+                        width: 250px;
+                        margin-top: 120%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .skill_box_icon3 {
+                        background-image: url("../images/ipad icon_mobile.svg");
+                        height: 31%;
+                        width: 230px;
+                        margin-top: 110%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .skill_box_icon4 {
+                        background-image: url("../images/dev advocate icon_mobile.svg");
+                        height: 45%;
+                        width: 201px;
+                        margin-top: 110%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .skill_box_icon5 {
+                        background-image: url("../images/manual testing icon_mobile.svg");
+                        height: 30%;
+                        width: 202.1px;
+                        margin-top: 110%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .skill_box_icon6 {
+                        background-image: url("../images/research icon_mobile.svg");
+                        height: 27%;
+                        width: 191px;
+                        margin-top: 110%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                  
+
+            }
     }
 
     @if $breakpoint == tab_land {
@@ -158,10 +263,7 @@
 
             .button_text{
                 font-size: 0.7rem;
-            }
-        }
-            
-        }
+            } } }
 
         @if $breakpoint == mac15 {
 
@@ -199,4 +301,4 @@
 
        
 
-}
+            }
