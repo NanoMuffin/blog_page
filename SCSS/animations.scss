@@ -47,3 +47,39 @@
     }
 
 }
+
+@keyframes skills_animation {
+    
+    0%{ 
+        transform: scale(1);
+     }
+    
+    100%{ 
+        transform: scale(1.2); 
+    }
+    
+}
+
+.skill_box_icon:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }
+
+  .skill_box_icon2:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }
+
+  .skill_box_icon3:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }
+
+  .skill_box_icon4:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }
+
+  .skill_box_icon5:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }
+
+  .skill_box_icon6:hover {
+    animation: skills_animation 0.5s ease-out forwards;
+  }

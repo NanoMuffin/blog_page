@@ -23,7 +23,8 @@ body{
   top: 0px;
   background-color: $header_color;
   margin: 0;
-  animation: main_block_animation 2s ease-out forwards 
+  animation: main_block_animation 2s ease-out forwards;
+  z-index: 4;
   }
   
   
@@ -279,8 +280,6 @@ body{
     bottom: calc(100vh - (#{$main_div_height} + #{$head_div_height} + #{$contact_section_height}));
     width: 100vw;
     height: $contact_section_height;
-    //background-color: blue; }
-    //background-color: $header_text_color;
     animation: main_block_animation 2s ease-out forwards; 
   }
 
@@ -338,7 +337,7 @@ body{
     width: 910px;
     background-color: #ffffff;
     background-image: url("../images/skill_description_box.svg");
-    z-index: -1;
+    z-index: 1;
   }
 
   .skill_boxes_heading {
@@ -347,6 +346,7 @@ body{
     color: #ffffff;
     padding-top: 1rem;
     font-size: 1.5rem;
+    z-index: 2;
   }
 
   .skill_box_iconbox {
@@ -355,65 +355,66 @@ body{
     width: 50%;
     height: 90%;
     left: 50%;
+    z-index: 2;
   }
+
   
   .skill_box_icon {
     height: 60%;
     width: 383px;
-    margin-top: 50%;
+    margin-top: 17%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
+    padding-left: 0;
     background-image: url("../images/project planning icon.svg");
+    z-index: 3;
   }
+
+ 
+
 
   .skill_box_icon2 {
     height: 48%;
     width: 383px;
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
     background-image: url("../images/team_management.svg");
   }
 
   .skill_box_icon3 {
     height: 48%;
     width: 356px;
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
     background-image: url("../images/ipad icon.svg");
   }
 
   .skill_box_icon4 {
     height: 44.5%;
     width: 201px;
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
     background-image: url("../images/dev advocate icon.svg");
   }
 
   .skill_box_icon5 {
     height: 38.5%;
     width: 261px;
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
     background-image: url("../images/manual testing icon.svg");
   }
 
   .skill_box_icon6 {
     height: 37%;
     width: 261px;
-    margin-top: 50%;
+    margin-top: 25%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(-60%);
     background-image: url("../images/research icon.svg");
   }
 
@@ -421,7 +422,7 @@ body{
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 1.13rem;
     color: black;
     margin: 0; }
 
@@ -437,6 +438,15 @@ body{
       margin-top: 13%;
       margin-left: 15px;
 
+    }
+
+    .up_button {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url("../images/up button.svg");
+      width: 174px;
+      height: 47px;
     }
 
     .footer {

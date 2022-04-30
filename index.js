@@ -20,6 +20,11 @@ var text4 = textsArray[3];
 var text5 = textsArray[4];
 var text6 = textsArray[5];
 
+
+var up_btn = document.getElementsByClassName("up_button")[0];
+
+const headDiv = document.querySelectorAll(".head_div")[0]
+
 function onLoad() {
   
   function makeIt() {
@@ -65,6 +70,9 @@ skill6.addEventListener("click", () => skilid(skillbox6));
 project1.addEventListener("click", choosep1)
 project2.addEventListener("click", choosep2)
 project3.addEventListener("click", choosep3)
+
+headDiv.addEventListener("mouseover", () => window.scrollTo({top: 0, behavior: "smooth"}));
+up_btn.addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
 
 
 
@@ -127,11 +135,21 @@ function choosep3() {
 var isChrome = !!window.chrome;
 var screenWidth = window.innerWidth
 
-if (isChrome === true & screenWidth > 1024) {
+if (isChrome === true & screenWidth > 1280) {
   if (screenWidth > 1024){
 var header = document.querySelector(".contact_header")
 header.style.transform = "translate(-25%)"}
 };
+
+
+function SafariFIx() {
+  if (isChrome === false) {
+    var icon = document.querySelectorAll(".skill_box_descriptiontext")[0];
+    icon.style.fontSize = "16px"
+  }
+};
+
+SafariFIx()
 
 if (screenWidth < 900) {
   text1.innerHTML = 'Умею планировать работы: <br> -Выясню, что и как <br> необходимо сделать <br> -Определю последовательность <br>  работ и сроки <br> -Найду исполнителей <br> -Построю дорожную карту <br> -Буду отчитываться  <br> о статусе работ <br>';
