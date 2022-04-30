@@ -143,9 +143,22 @@ header.style.transform = "translate(-25%)"}
 
 
 function SafariFIx() {
-  if (isChrome === false) {
+  if (isChrome === false & screenWidth > 1280 ) {
     var icon = document.querySelectorAll(".skill_box_descriptiontext")[0];
     icon.style.fontSize = "16px"
+  } else if (isChrome === false & screenWidth < 1280) {
+    var icon = document.querySelectorAll(".skill_box_descriptiontext")[0];
+    var icon2 = document.querySelectorAll(".skill_box_descriptiontext")[1];
+    var icon3 = document.querySelectorAll(".skill_box_descriptiontext")[2];
+    var icon4 = document.querySelectorAll(".skill_box_descriptiontext")[3];
+    var icon5 = document.querySelectorAll(".skill_box_descriptiontext")[4];
+    var icon6 = document.querySelectorAll(".skill_box_descriptiontext")[5];
+    icon.style.fontSize = "12px";
+    icon2.style.fontSize = "12px";
+    icon3.style.fontSize = "12px";
+    icon4.style.fontSize = "12px";
+    icon5.style.fontSize = "12px";
+    icon6.style.fontSize = "12px";
   }
 };
 
