@@ -216,7 +216,7 @@ body {
 .main_div {
   position: relative;
   width: 100vw;
-  height: calc(100vh - (5rem + 18rem));
+  height: 630px;
   overflow: none;
 }
 
@@ -825,7 +825,7 @@ p {
     margin-bottom: 100px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
   .button_text {
     font-size: 0.9rem;
   }

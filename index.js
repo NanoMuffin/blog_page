@@ -138,7 +138,9 @@ var screenWidth = window.innerWidth
 if (isChrome === true & screenWidth > 1280) {
   if (screenWidth > 1024){
 var header = document.querySelector(".contact_header")
-header.style.transform = "translate(-25%)"}
+var text1 = document.querySelectorAll(".skill_boxes_heading")[0]
+header.style.transform = "translate(-25%)"
+text1.style.transform = "translate(-25%)"}
 };
 
 

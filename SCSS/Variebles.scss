@@ -7,7 +7,8 @@ $head_div_height: 5rem;
 $contact_section_height: 18rem;
 $skills_head-row: 6.4rem;
 $contacts_section_header_height: 6rem;
-$main_div_height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
+//$main_div_height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
+$main_div_height: calc(100vh - (#{$head_div_height} + #{$contact_section_height})); 
 
 
 //varibles for grid

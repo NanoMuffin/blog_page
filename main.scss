@@ -55,7 +55,8 @@ body{
   .main_div{
   position: relative;
   width: 100vw;
-  height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
+  height: 630px;
+  //height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
   overflow: none;
   }
   
