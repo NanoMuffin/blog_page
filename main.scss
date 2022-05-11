@@ -13,7 +13,6 @@ body{
     height: 520vh;
     width: 100vw;
     scroll-behavior: smooth;
-    overflow: hidden;
   }
   
   // Header
@@ -27,6 +26,7 @@ body{
   margin: 0;
   animation: main_block_animation 2s ease-out forwards;
   z-index: 4;
+  overflow: hidden;
   }
   
   
