@@ -8,7 +8,7 @@
   <meta name="keywords" content="pm,project manager, cv">
   <meta name="author" content="Александр Сорока">
 
-  <link rel="stylesheet" href="./blog_page/CSS/style.css?v=1.1"> 
+  <link rel="stylesheet" href="./css/style.css"> 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 
     <p class="name_text">
       Александр Сорока
-      <span class="role_text">it project manager</span>
+      <span class="role_text">техлид в Sotkaonline.ru</span>
     </p>
 
   </div>
@@ -35,7 +35,7 @@
    
     <div class="photo_box">
 
-      <div class="baby_box" > <img class="photo" src="./blog_page/images/profile1.png" alt=""> </div>
+      <div class="baby_box" > <img class="photo" src="./images/profile1.png" alt=""> </div>
 
     </div>
 
@@ -54,15 +54,15 @@
       <div class="skills_container_row2">
 
         <div class="skillsandprojects-col"> 
-          <button class="button_test button_text button_click" name="button">Планирование проекта</button>
+          <button class="btn button_test button_text button_click" id="skill1" name="button">Планирование проекта</button>
         </div>
         
         <div class="skillsandprojects-col"> 
-          <button class="button_test button_text button_click" type="button" name="button">Управление командой</button>
+          <button class="btn button_test button_text button_click" id="skill_2" type="button" name="button">Управление командой</button>
         </div>
         
         <div class="skillsandprojects-col"> 
-          <button class="button_test button_text button_click" type="button" name="button">Документация проекта</button>
+          <button class="btn button_test button_text button_click" id="skill3" type="button" name="button">Документация проекта</button>
         </div>
       
       </div>
@@ -70,17 +70,24 @@
       <div class="skills_container_row2">
 
         <div class="skillsandprojects-col"> 
-          <button class="button_test button_text button_click" type="button" name="button">Dev advocate</button>
+          <button class="btn button_test button_text button_click" id="skill4" type="button" name="button">Dev advocate</button>
         </div>
        
         <div class="skillsandprojects-col">
-         <button class="button_test button_text button_click" type="button" name="button">Ручное тестирование</button>
+         <button class="btn button_test button_text button_click" id="skill5"type="button" name="button">Ручное тестирование</button>
         </div>
         
         <div class="skillsandprojects-col">
-          <button class="button_test button_text button_click" type="button" name="button">Исследование и анализ</button>
+          <button class="btn button_test button_text button_click" id="skill6" type="button" name="button">Исследование и анализ</button>
         </div>
       
+      </div>
+
+      <div class="skills_container_row2">
+        <div class="skillsandprojects-special-col">
+          <button class="btn_special button_text button_click" type="button" name="button">про технические навыки</button>
+         </div>
+
       </div>
       
 
@@ -101,17 +108,17 @@
 
       <div class="skills_container_row3">
         <div class="skillsandprojects-col-one">
-          <button class="button_test button_text button_click" type="button" name="button"> ЕГЭLAND образовательная платформа</button>
+          <button class="button_test2 button_text button_projects_clicks" id="project1" type="button" name="button"> ЕГЭLAND образовательная платформа</button>
         </div>
       </div>
       <div class="skills_container_row3">
         <div class="skillsandprojects-col-one">
-          <button class="button_test button_text button_click" type="button" name="button"> ЕГЭLAND shop интернет-магазин</button>
+          <button class="button_test2 button_text button_projects_clicks" id="project2" type="button" name="button"> ЕГЭLAND shop интернет-магазин</button>
         </div>
       </div>
       <div class="skills_container_row3">
         <div class="skillsandprojects-col-one">
-          <button class="button_test button_text button_click" type="button" name="button"> СОТКА образовательная платформа</button></div>
+          <button class="button_test2 button_text button_projects_clicks" id="project3" type="button" name="button"> СОТКА образовательная платформа</button></div>
         </div>
       </div>
       </div>
@@ -119,12 +126,12 @@
 
   <div class="contacts_section">
 
-      <p class="contact_header">Нужен PM или разработчик?<br> Свяжитесь со мной </p>
+      <p class="contact_header"> Контакты для связи </p>
 
   <div class="contacts_section_row">
-  <div class="contacts_section_col"> <a href="https://vk.com/nanomuffin"> <img class="vk_picture" src="./blog_page/images/vk.png" alt=""> </a> </div>
-  <div class="contacts_section_col"> <a href="https://t.me/nanomuffin"> <img class="tg_picture" src="./blog_page/images/tg.png" alt=""> </a> </div>
-  <div class="contacts_section_col"> <a href="mailto:nanomuffin@yandex.ru"> <img class="hh_picture" src="./blog_page/images/email.png" alt=""> </a> </div>
+  <div class="contacts_section_col"> <a href="https://vk.com/nanomuffin"> <img class="vk_picture" src="./images/vk.png" alt=""> </a> </div>
+  <div class="contacts_section_col"> <a href="https://t.me/nanomuffin"> <img class="tg_picture" src="./images/tg.png" alt=""> </a> </div>
+  <div class="contacts_section_col"> <a href="mailto:nanomuffin@yandex.ru"> <img class="hh_picture" src="./images/email.png" alt=""> </a> </div>
  </div> </div>
 
  <div class = "skill_box1">
@@ -134,13 +141,14 @@
   </div>
   
   <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
- Умею планировать работы: <br>
+  Умею планировать работы: <br>
  -Выясню, что и как необходимо сделать <br>
  -Определю последовательность работ и сроки <br>
  -Найду исполнителей <br>
  -Построю дорожную карту <br>
  -Буду отчитываться о статусе работ <br>
-</p>  </div>
+</p> 
+</div>
   </div>
 
   <div class = "skill_box1">
@@ -224,10 +232,46 @@
            </div>
 
            <div class = "up_button"></div>
+           <div class = "tech_skills_block">
+            <div class="tech_skills_block_header"> Технические навыки </div>
+            <div class="tech_skills_switcher">
+              <div class="tech_skills_switcher_item" id="fr">Frontend</div>
+              <div class="tech_skills_switcher_item" id="bc">Backend</div>
+              <div class="tech_skills_switcher_item" id="dev">Devops</div>
+            </div>
+            <div class="tech_skills_block_items_container">
+              <div class="tech_skills_block_item_header">Языки</div>
+              <div class="tech_skills_block_items_row">
+              <div class="tech_skills_block_item" id="1">JavaScript</div>
+              <div class="tech_skills_block_item" id="2">TypeScript</div>
+              <div class="tech_skills_block_item" id="3">CSS</div>
+              <div class="tech_skills_block_item" id="4">PHP</div>
+              <div class="tech_skills_block_item" id="5">SQL</div>
+              </div>
+              <div class="tech_skills_block_item_header">Фреймворки</div>
+              <div class="tech_skills_block_items_row">
+              <div class="tech_skills_block_item" id="6">React</div>
+              <div class="tech_skills_block_item" id="7">Laravel</div>
+              </div>
+              <div class="tech_skills_block_item_header">Инструменты</div>
+              <div class="tech_skills_block_items_row">
+              <div class="tech_skills_block_item" id="8">Gitlab</div>
+              <div class="tech_skills_block_item" id="9">Docker</div>
+              <div class="tech_skills_block_item" id="10">Grafana</div>
+              </div>
+              <div class="tech_skills_block_item_header">Базы данных</div>
+              <div class="tech_skills_block_items_row">
+              <div class="tech_skills_block_item" id="11">Mysql</div>
+              <div class="tech_skills_block_item" id="12">MongoDB</div>
+              <div class="tech_skills_block_item" id="13">Redis</div>
+              </div>
+              
+            </div>
+            </div>
+           </div>
 
            <div class="footer"></div>
-
-<script src="./blog_page/index.js?v=1.1" charset="utf-8"></script>
+           <script src="./index.js" charset="utf-8"></script>
 
 </body>
 

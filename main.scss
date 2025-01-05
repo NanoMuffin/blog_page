@@ -3,6 +3,7 @@
 @import "SCSS/imgs";
 @import "SCSS/Slider";
 @import "SCSS/animations";
+@import "SCSS/TechSkillsModule";
 
 // Media queries located in Mixins
 
@@ -194,6 +195,15 @@ body{
     height: 100%;
     float: left;
     background-color: white;
+    // color: black;
+    text-align: center;
+  }
+
+  .skillsandprojects-special-col{
+    width: calc(100% / 3);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
     text-align: center;
   }
 
@@ -219,11 +229,22 @@ body{
 
   
   
-
+  .btn_special{
+    height: 40px;
+    width: 90%;
+  }
+  
+  
   .button_test{
     position: relative;
-    width: auto;
+    height: 40px;
+    width: 90%;
+  }
+
+  .button_test2{
+    position: relative;
     height: auto;
+    width: auto;
   }
   
   
@@ -231,8 +252,8 @@ body{
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 700;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 1.1rem;
+    // color: black;
     margin: 0;
   
     background-color: transparent;
@@ -271,9 +292,13 @@ body{
   // Used in Index js to style buttons
   .button_click{
     border-width: 215px;
-    border-radius: 40px;
+    border-radius: 60px;
     background-color:black;
     color: white;
+  }
+
+  .button_projects_clicks{
+    border-bottom: 1px solid black;
   }
   
   
@@ -308,7 +333,7 @@ body{
 
   .contacts_section_row{
     position: absolute;
-    top: $contacts_section_header_height;
+    top: 4rem;
     padding-top: 1rem;
     left: 0;
     right: 0;
@@ -335,7 +360,8 @@ body{
   .skill_box1{
     position: relative;
     margin: 0 auto;
-    margin-top: 20vh;
+    // margin-top: 20vh;
+    margin-bottom: 100px;
     height: 485px;
     width: 910px;
     background-color: #ffffff;
@@ -433,6 +459,7 @@ body{
     
       margin-top: 15%;
       margin-left: 15px;
+      width: 50%;
 
     }
 
@@ -447,6 +474,7 @@ body{
       margin-top: 50px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 60px;
       background-image: url("../images/up button.svg");
       width: 174px;
       height: 47px;
@@ -456,7 +484,6 @@ body{
       width: 100vw;
       background-color: $header_color;
       height: $head_div_height;
-      margin-top: 10%;
     }
 
 
@@ -465,6 +492,7 @@ body{
     height: auto;
     text-align: center;
   }
+
 
   @include respond(phone);
   @include respond(mac13);

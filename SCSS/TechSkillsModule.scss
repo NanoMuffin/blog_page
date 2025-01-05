@@ -1,0 +1,102 @@
+@import "./Variebles";
+@import "./Mixins";
+
+.tech_skills_block {
+    background-color: black;
+    height: 110vh;
+    width: 100vw;
+  }
+
+  .tech_skills_block_header {
+    // justify-self: center;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 36px;
+    width: 100%;
+    height: 35px;
+    font-family: $secondary_font;
+    font-style: $secondary_font_style;
+    font-weight: $secondary_font_weight;
+    color: #ffffff;
+    @include techSkillsHeaderText()
+  }
+
+  .tech_skills_switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 46px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(196, 196, 196, 0.44);
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .tech_skills_switcher_item {
+    height: 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80px;
+    font-size: 20px;
+    @include techSkillsHeaderText()
+  }
+
+  .tech_skills_switcher_accent {
+    color: black;
+    border-radius: 60px;
+    background-color: white;
+
+  }
+  
+  .tech_skills_block_items_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  
+  .tech_skills_block_item_header {
+    width: 100%;
+    font-size: 24px;
+    font-family: $secondary_font;
+    font-style: $secondary_font_style;
+    font-weight: $secondary_font_weight;
+    color: #ffffff;
+    padding-left: 19px;
+    @include techSkillsHeaderText()
+  }
+
+  .tech_skills_block_items_row {
+    display: flex;
+    flex-direction: row;
+    width: 560px;
+    flex-wrap: wrap;
+    padding-left: 11px;
+  }
+  
+  .tech_skills_block_item {
+    width: 130px;
+    height: 25px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 20px;
+    font-family: $secondary_font;
+    font-style: $secondary_font_style;
+    font-weight: $secondary_font_weight;
+    color: #ffffff;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px 5px;
+    @include techSkillsHeaderText()
+  }
+
+  .tech_skills_block_item_accent {
+    color: black;
+    background-color: white;
+
+  }

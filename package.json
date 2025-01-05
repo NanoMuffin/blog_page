@@ -4,7 +4,7 @@
   "description": "blog page",
   "main": "index.html",
   "scripts": {
-    "compile:sass":"sass main.scss css/style.css"
+    "compile:sass":"sass ./main.scss ./css/style.css"
   },
   "author": "NanoMuffin",
   "license": "ISC",
