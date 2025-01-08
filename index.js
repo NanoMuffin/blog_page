@@ -98,8 +98,8 @@ var skillbox6 = document.getElementsByClassName("skill_boxes_heading")[5];
 
 headDiv.addEventListener("mouseover", () => window.scrollTo({top: 0, behavior: "smooth"}));
 up_btn.addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
-var techSkilsSection = window.getElementById('tech_skills');
-techSkills.addEventListener('click', () => skilid(techSkills));
+var techSkilsSection = document.getElementById('tech_skills');
+techSkilsSection.addEventListener('click', () => skilid(document.getElementById('fr')));
 
 
 
