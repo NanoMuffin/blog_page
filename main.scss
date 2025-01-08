@@ -310,6 +310,7 @@ body{
   
   // Contacts section
   .contacts_section{
+    text-align: center;
     position: relative;
     bottom: calc(100vh - (#{$main_div_height} + #{$head_div_height} + #{$contact_section_height}));
     width: 100vw;
@@ -325,12 +326,12 @@ body{
     }
   
   .contact_header{
-    text-align: center;
-    height: auto;
+    position: fixed;
+    height: 30px;
     width: 100vw;
     //transform: translate(-25%);
     margin-bottom: 0.2rem;
-    display: block;
+    // display: block;
   
   
     @include sectionHeaderText();

@@ -560,6 +560,7 @@ p {
 }
 
 .contacts_section {
+  text-align: center;
   position: relative;
   bottom: calc(100vh - (calc(100vh - (5rem + 18rem)) + 5rem + 18rem));
   width: 100vw;
@@ -574,11 +575,10 @@ p {
 }
 
 .contact_header {
-  text-align: center;
-  height: auto;
+  position: fixed;
+  height: 30px;
   width: 100vw;
   margin-bottom: 0.2rem;
-  display: block;
   font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
   font-weight: 700;
@@ -958,6 +958,11 @@ p {
 @media screen and (min-width: 1300px) and (max-height: 1200px) {
   .button_text {
     font-size: 0.9rem;
+  }
+
+  #fix {
+    position: relative;
+    transform: translate(-25%);
   }
 }
 @media screen and (min-width: 1600px) {

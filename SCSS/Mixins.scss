@@ -287,7 +287,14 @@
 
             .button_text{
                 font-size: 0.9rem;
-            } } }
+            }
+
+            #fix {
+                position: relative;
+                transform: translate(-25%);
+            }
+        
+        } }
 
         @if $breakpoint == mac15 {
 

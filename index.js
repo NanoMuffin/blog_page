@@ -17,8 +17,20 @@ const projectSkillsMap = {
   'project2' : ['skill1','skill_2','skill4','skill5','skill6'],
   'project3' : ['skill1','skill_2','skill3','skill4','skill5','skill6']
 }
+
+const projectBlocksMap = {
+  'skill1' : 'block1',
+  'skill_2' : 'block2',
+  'skill3' : 'block3',
+  'skill4' : 'block4',
+  'skill5' : 'block5',
+  'skill6' : 'block6',
+}
 var allBtns = Object.values(projectSkillsMap)
 
+function skilid(param) {
+  param.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+};
 
 
 function chooseProject(key) {
@@ -52,6 +64,15 @@ function onLoad() {
   allBtns.map((i) => i.forEach(btn => document.getElementById(btn).classList.remove('button_click')))
   }
 
+  Object.keys(projectBlocksMap).forEach((el) => {
+    var skill =  document.getElementById(el)
+    var block = document.getElementById(projectBlocksMap[el])
+    console.log(skill)
+    console.log(block)
+    skill.addEventListener('click', () => skilid(block))
+
+  })
+
   setTimeout(() => makeIt(), 2000);
 }
 
@@ -68,26 +89,17 @@ var skillbox5 = document.getElementsByClassName("skill_boxes_heading")[4];
 var skillbox6 = document.getElementsByClassName("skill_boxes_heading")[5];
 
 
-function skilid(param) {
-  param.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
-};
-
-
-
 // skill1.addEventListener("click", () => skilid(skillbox1));
 // skill2.addEventListener("click", () => skilid(skillbox2));
 // skill3.addEventListener("click", () => skilid(skillbox3));
 // skill4.addEventListener("click", () => skilid(skillbox4));
 // skill5.addEventListener("click", () => skilid(skillbox5));
 // skill6.addEventListener("click", () => skilid(skillbox6));
-// skill7.addEventListener("click", () => skilid(techSkillsBlock))
-
-// project1.addEventListener("click", choosep1)
-// project2.addEventListener("click", choosep2)
-// project3.addEventListener("click", choosep3)
 
 headDiv.addEventListener("mouseover", () => window.scrollTo({top: 0, behavior: "smooth"}));
 up_btn.addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
+var techSkilsSection = window.getElementById('tech_skills');
+techSkills.addEventListener('click', () => skilid(techSkills));
 
 
 
