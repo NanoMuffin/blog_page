@@ -714,7 +714,7 @@ p {
 }
 
 .skill_box_descriptionbox {
-  margin-top: 15%;
+  margin-top: 13%;
   margin-left: 15px;
   width: 50%;
 }
@@ -948,11 +948,16 @@ p {
   }
 
   .tech_skills_block {
-    height: 104vh;
+    height: 150vh;
   }
 
   .skillsandprojects-special-col {
     width: auto;
+  }
+
+  .contacts_section {
+    bottom: 0px;
+    top: 40px;
   }
 }
 @media screen and (min-width: 1300px) and (max-height: 1200px) {
