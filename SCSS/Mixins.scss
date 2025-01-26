@@ -153,11 +153,20 @@
                     //height: calc((100% - #{$skills_head-row})/3);
                     border: none;
                   }
+
                 
             }
 
             @media screen and (max-width: 900px) {
 
+                body {
+                    height: 445vh;
+                }
+                
+                .swiper {
+                    width: 100vw;
+                }
+                
                 .skill_box1{
                     // margin-top: 20vh;
                     width: 290px;
@@ -273,6 +282,15 @@
                     .contacts_section {
                         bottom: 0px;
                         top: 40px
+                    }
+
+                    .project_list_frame {
+                        width: 350px;
+                    }
+
+                    .projects_list {
+                        width: 100%;
+                        font-size: 0.9rem;
                     }
                   
 

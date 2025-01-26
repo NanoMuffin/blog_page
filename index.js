@@ -43,11 +43,29 @@ function chooseProject(key) {
   projectSkillsMap[key].forEach( i => document.getElementById(i).classList.add('button_click'))
 }
 
-Object.keys(projectSkillsMap).map((i) => {  
-  var switcher = document.getElementById(i)
-  console.log(switcher)
-  switcher.addEventListener('click', () => { switcher.classList.add('button_projects_clicks'), chooseProject(i) })
-})
+// Object.keys(projectSkillsMap).map((i) => {  
+//   var switcher = document.getElementById(i)
+//   console.log(switcher)
+//   switcher.addEventListener('click', () => { switcher.classList.add('button_projects_clicks'), chooseProject(i) })
+// })
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const swiper = new Swiper('.sample_slider', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: false,
+//     speed: 2400,
+//     parallax: true,
+
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//   });
+//   swiper.addSlide(1,"<div class='swiper-slide'>Slide 1</div>")
+//   console.log(swiper.slides)
+// })
 
 
 
@@ -59,19 +77,19 @@ const headDiv = document.querySelectorAll(".head_div")[0]
 
 function onLoad() {
   
-  function makeIt() {
-  Object.keys(projectSkillsMap).forEach(i => document.getElementById(i).classList.remove('button_projects_clicks'))
-  allBtns.map((i) => i.forEach(btn => document.getElementById(btn).classList.remove('button_click')))
-  }
+  // function makeIt() {
+  // Object.keys(projectSkillsMap).forEach(i => document.getElementById(i).classList.remove('button_projects_clicks'))
+  // allBtns.map((i) => i.forEach(btn => document.getElementById(btn).classList.remove('button_click')))
+  // }
 
-  Object.keys(projectBlocksMap).forEach((el) => {
-    var skill =  document.getElementById(el)
-    var block = document.getElementById(projectBlocksMap[el])
-    console.log(skill)
-    console.log(block)
-    skill.addEventListener('click', () => skilid(block))
+  // Object.keys(projectBlocksMap).forEach((el) => {
+  //   var skill =  document.getElementById(el)
+  //   var block = document.getElementById(projectBlocksMap[el])
+  //   console.log(skill)
+  //   console.log(block)
+  //   skill.addEventListener('click', () => skilid(block))
 
-  })
+  // })
 
   setTimeout(() => makeIt(), 2000);
 }
@@ -89,86 +107,14 @@ var skillbox5 = document.getElementsByClassName("skill_boxes_heading")[4];
 var skillbox6 = document.getElementsByClassName("skill_boxes_heading")[5];
 
 
-// skill1.addEventListener("click", () => skilid(skillbox1));
-// skill2.addEventListener("click", () => skilid(skillbox2));
-// skill3.addEventListener("click", () => skilid(skillbox3));
-// skill4.addEventListener("click", () => skilid(skillbox4));
-// skill5.addEventListener("click", () => skilid(skillbox5));
-// skill6.addEventListener("click", () => skilid(skillbox6));
-
 headDiv.addEventListener("mouseover", () => window.scrollTo({top: 0, behavior: "smooth"}));
 up_btn.addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
-var techSkilsSection = document.getElementById('tech_skills');
-techSkilsSection.addEventListener('click', () => skilid(document.getElementById('fr')));
-
-
-
-
-
-// function choosep1() {
-//   selectedProject = 1;
-//   project1.classList.add("button_click");
-
-//   if (selectedProject == 1) {
-//       skill2.classList.add("button_click")
-//       skill4.classList.add("button_click")
-//       skill5.classList.add("button_click")
-
-//       skill1.classList.remove("button_click")
-//       skill3.classList.remove("button_click")
-//       skill6.classList.remove("button_click")
-//       project2.classList.remove("button_click")
-//       project3.classList.remove("button_click")}}
-
-// function choosep2() {
-//   selectedProject = 2;
-//   project2.classList.add("button_click");
-
-
-//   if (selectedProject == 2) {
-//     skill1.classList.add("button_click")
-//     skill2.classList.add("button_click")
-//     skill4.classList.add("button_click")
-//     skill5.classList.add("button_click")
-//     skill6.classList.add("button_click")
-
-//     skill3.classList.remove("button_click")
-//     project1.classList.remove("button_click")
-//     project3.classList.remove("button_click")
-//   }
-// };
-
-// function choosep3() {
-//   selectedProject = 3
-//   project3.classList.add("button_click");
-
-
-//   if (selectedProject == 3) {
-//     skill1.classList.add("button_click")
-//     skill2.classList.add("button_click")
-//     skill3.classList.add("button_click")
-//     skill4.classList.add("button_click")
-//     skill5.classList.add("button_click")
-//     skill6.classList.add("button_click")
-
-//     project1.classList.remove("button_click")
-//     project2.classList.remove("button_click")
-
-//     selectedProject = selectedProject + 1
-//   } 
-// };
+// var techSkilsSection = document.getElementById('tech_skills');
+// techSkilsSection.addEventListener('click', () => skilid(document.getElementById('fr')));
 
 
 var isChrome = !!window.chrome;
 var screenWidth = window.innerWidth
-
-// if (isChrome === true & screenWidth > 1280) {
-//   if (screenWidth > 1024){
-// var header = document.querySelector(".contact_header")
-// var text1 = document.querySelectorAll(".skill_boxes_heading")[0]
-// header.style.transform = "translate(-25%)"
-// text1.style.transform = "translate(-25%)"}
-// };
 
 
 function SafariFIx() {
