@@ -7,17 +7,17 @@
 
 // Media queries located in Mixins
 
-body{
-    margin:0px;
-    padding: 0;
-    font-size: 100%;
-    height: fit-content;
-    width: 100vw;
-    scroll-behavior: smooth;
-  }
-  
-  // Header
-  .head_div{
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 100%;
+  height: fit-content;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+// Header
+.head_div {
   position: sticky;
   width: 100vw;
   height: $head_div_height;
@@ -28,597 +28,565 @@ body{
   animation: main_block_animation 2s ease-out forwards;
   z-index: 4;
   overflow: hidden;
-  }
-  
-  
-  .name_text{
+}
+
+.name_text {
   position: absolute;
   height: inherit;
   margin: 0;
   width: 100%;
   padding-left: 3.43rem;
   padding-top: 1.2rem;
-  
-  
-  @include mainHeaderText() }
-  
-  .role_text{
+
+  @include mainHeaderText();
+}
+
+.role_text {
   position: absolute;
   padding-left: 3.12rem;
   padding-top: 0.8rem;
   margin: 0;
-  
+
   font-family: $secondary_font;
   font-style: $secondary_font_style;
   font-weight: $secondary_font_weight;
   font-size: 1rem;
-  }
-  
-  //Main block with photo and buttons
-  .main_div{
+}
+
+//Main block with photo and buttons
+.main_div {
   display: flex;
   position: relative;
   width: 100vw;
   height: 500px;
   //height: calc(100vh - (#{$head_div_height} + #{$contact_section_height}));
   overflow: none;
-  }
-  
-  //photo itself is located in imgs file
-  .photo_box{
+}
+
+//photo itself is located in imgs file
+.photo_box {
   position: relative;
   width: 40vw;
   height: 100%;
   margin: 0;
   background-color: $header_text_color;
   text-align: center;
-  }
-
-  .baby_box {
-    position: relative;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    //background-color: black;
-    z-index: 1;
-    scale: 0.9;
-    animation: pulse_photo_onload 2s ease-out forwards;
-   }
-
-   .baby_box:hover{
-    animation: pulse_photo 4s infinite;
-
-  }
-
-  //baby_box used for photo pulsing animation
-  .baby_box::after {
-    content: "";
-    position: absolute;
-    margin-top: 50px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: auto;
-    height: 85%;
-    //background-color: black;
-    border-radius: 50%;
-    border-width: 1px;
-    border-left-style: solid;
-    border-right-style:solid;
-    border-top-style: none;
-    border-bottom-style: none;
-    opacity: 0%;
-    z-index: -1;
-
-  }
-
-  .baby_box:hover::after{
-    content: "";
-    animation: pulse 4s infinite;
-  }
-
-  .main_text {
-    margin-top: 25%;
-    padding-top: 20px;
-    font-family: $header_font;
-    font-style: $header_font_style;
-    font-weight: $header_font_weight;
-    font-size: 1.6rem;
-    color: white;
-    background-color: rgba(25, 146, 232, 1);
-    width: 650px;
-    height: 154px;
-    text-align: center;
-  }
-
-  .projects_list {
-    width: 670px;
-    font-family: $secondary_font;
-    font-style: $secondary_font_style;
-    font-weight: $secondary_font_weight;
-    font-size: 1.5rem;
-    list-style: none;
-    padding: 0;
-    // margin-left: 350px;
-    position: relative;
-    // top: 500px;
-  }
-
-  .project_list_frame {
-    width: 800px;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-bottom: 150px;
-  }
-
-  li {
-    // list-style-image: url(../images/list_item.svg);
-    background-image: url("../images/list_item.svg");
-	  background-repeat: no-repeat;
-	  background-position: left top;
-    padding-left: 50px;
-    margin-top: 10px;
-	  background-size: 30px;
-  }
-
-
-
-  .sample-slider {
-    width: 40%;
-    height: 600px;
-    z-index: 10;
-  }
-  
-  .swiper_slide_size {
-    width: 22%;
-    background-color: azure;
-  }
-
-  .swiper {
-    height: 600px;
-    width: 1000px;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .swiper_card {
-    height: 490px;
-    width: 290px;
-    background-image: url("../images/skillbox_frame_mobile.svg");
-    // background-color: aqua;
-  }
-
-  .skill_cards_header {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    font-family: $header_font;
-    font-style: $header_font_style;
-    font-weight: $header_font_weight;
-    color: black;
-    font-size: 32px;
-    text-align: center;
-  }
-  
-  .skill_card_heading {
-    padding-top: 20px;
-    padding-left: 80px;
-    font-size: 16px;
-    font-family: $secondary_font;
-    font-style: $secondary_font_style;
-    font-weight: $secondary_font_weight;
-    color: #ffffff;
-  }
-  .skill_card_text {
-    font-family: $secondary_font;
-    font-style: $secondary_font_style;
-    font-weight: $secondary_font_weight;
-    margin-top: 40px;
-    margin-right: 2%;
-    font-size: 13px;
-    text-align: center;
-  }
-  .skill_card_pic {
-    height: 36%;
-    width: 250px;
-    margin-top: 15%;
-    margin-left: 8%;
-    // margin-right: auto;
-  }
-
-  
-
-  //Skills container
-  .skillsandprojects_container{
-    position: relative;
-    // bottom: 100%;
-    // // left: 50%;
-    // // width: 50vw;
-    height: 50%;
-    margin: 0;
-    background-color: white;
-    border: none;
-    animation: main_block_animation 2s ease-out forwards;
-  }
-
-   //Projects container
-  .skillsandprojects_container2{
-    position: relative;
-    bottom:100%;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-    margin: 0;
-    background-color: white;
-    border: none;
-   animation: main_block_animation 2s ease-out forwards;
-  }
-
-  p {
-    line-height: normal;
-  }
-
-  .secondLineTextClass{
-
-    line-height: 70%;
-
-  }
-
-  .secondLineText {
-    @include secondLineText
-  }
-
-
-  .skills_container_row{
-    width: 100%;
-    height: $skills_head-row;
-  }
-
-  .skillsandprojects_container_row{
-    width: 100%;
-    height: 50%;
-  }
-
-  // row for float table in skills section
-  .skills_container_row2{
-    width: 100%;
-    height: calc((100% - #{$skills_head-row})/4);
-    border: none;
-    margin-top: 1rem;
-    padding-bottom: 0.5rem;
-  }
-
-   // row for float table in projects section
-  .skills_container_row3{
-    width: 100%;
-    height: calc((100% - #{$skills_head-row})/4);
-    border: none;
-    margin-bottom: 0.5rem;
-  }
-
-  // Section in float table for Skills container
-  .skillsandprojects-col{
-    width: calc(100% / 3);
-    height: 100%;
-    float: left;
-    background-color: white;
-    // color: black;
-    text-align: center;
-  }
-
-  .skillsandprojects-special-col{
-    width: calc(100% / 3);
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    text-align: center;
-  }
-
-  // Section in float table for Projects container
-  .skillsandprojects-col-one{
-    width: inherit;
-    height: inherit;
-    float: left;
-    background-color: $header_text_color;
-    text-align: left;
-    @include sectionHeaderText();
-  }
-
-  //Used for header row line either in Skills and Projects containers
-  .skillsandprojects-col-header{
-    width: inherit;
-    height: inherit;
-    float: left;
-    background-color: $header_text_color;
-    text-align: center;
-    @include sectionHeaderText();
-  }
-
-  
-  
-  .btn_special{
-    height: 40px;
-    width: 250px;
-  }
-  
-  
-  .button_test{
-    position: relative;
-    height: 40px;
-    width: 90%;
-  }
-
-  .button_test2{
-    position: relative;
-    height: auto;
-    width: auto;
-  }
-  
-  
-  .button_text{
-    font-family: "Roboto Mono";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.1rem;
-    // color: black;
-    margin: 0;
-  
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-  
-  }
-
-  .button_test:active {
-    animation: pulse_photo 1s ease-out;
-  }
-  
-  .projects_section{
-    position: relative;
-    height: 50%;
-    width: 100%;
-    background-color: $header_text_color;
-  }
-  
-  .projects_header{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 0 auto auto 0;
-  
-  
-    @include sectionHeaderText();
-  
-  }
-  
-  
-  // Used in Index js to style buttons
-  .button_click{
-    border-width: 215px;
-    border-radius: 60px;
-    background-color:black;
-    color: white;
-  }
-
-  .button_projects_clicks{
-    border-bottom: 1px solid black;
-  }
-  
-  .button_click_special{
-    border-width: 215px;
-    border-radius: 60px;
-    background-color: $header_color;
-    color: white;
-  }
-  
-  // Contacts section
-  .contacts_section{
-    text-align: center;
-    position: relative;
-    // margin-top: 550px;
-    // bottom: calc(100vh - (#{$main_div_height} + #{$head_div_height} + #{$contact_section_height}));
-    width: 100vw;
-    height: $contact_section_height;
-    animation: main_block_animation 2s ease-out forwards; 
-  }
-
-
-    .contacts_header_container{
-      width: 100%;
-      height: $contacts_section_header_height;
-      text-align: center;
-    }
-  
-  .contact_header{
-    position: fixed;
-    height: 30px;
-    width: 100vw;
-    //transform: translate(-25%);
-    margin-bottom: 0.2rem;
-    // display: block;
-  
-  
-    @include sectionHeaderText();
-  
-  }
-
-  .contacts_section_row{
-    position: absolute;
-    top: 4rem;
-    padding-top: 1rem;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    height:calc(100% - #{$contacts_section_header_height});
-    margin: 0 auto;
-    width: calc(#{$picture_width} * 4);
-    @include clearFix
-  }
-
-  .contacts_section_col{
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: auto;
-    width: calc((#{$picture_width} * 4) / 3);
-    text-align: center;
-    float: left;
-    margin:0 auto;
-  }
-
-
-  .skill_box1{
-    position: relative;
-    margin: 0 auto;
-    // margin-top: 20vh;
-    margin-bottom: 100px;
-    height: 485px;
-    width: 910px;
-    background-color: #ffffff;
-    background-image: url("../images/skill_description_box.svg");
-    z-index: 1;
-  }
-
-  .skill_boxes_heading {
-    text-align: center;
-    @include sectionHeaderText;
-    color: #ffffff;
-    padding-top: 1rem;
-    font-size: 1.5rem;
-    z-index: 2;
-  }
-
-  .skill_box_iconbox {
-    position: absolute;
-    top: 54px;
-    width: 50%;
-    height: 90%;
-    left: 50%;
-    z-index: 2;
-  }
-
-  
-  .skill_box_icon {
-    height: 60%;
-    width: 383px;
-    margin-top: 17%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    background-image: url("../images/project planning icon.svg");
-    z-index: 3;
-  }
-
- 
-
-
-  .skill_box_icon2 {
-    height: 48%;
-    width: 383px;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/team_management.svg");
-  }
-
-  .skill_box_icon3 {
-    height: 48%;
-    width: 356px;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/ipad icon.svg");
-  }
-
-  .skill_box_icon4 {
-    height: 44.5%;
-    width: 201px;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/dev advocate icon.svg");
-  }
-
-  .skill_box_icon5 {
-    height: 38.5%;
-    width: 261px;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/manual testing icon.svg");
-  }
-
-  .skill_box_icon6 {
-    height: 37%;
-    width: 261px;
-    margin-top: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/research icon.svg");
-  }
-
-  .skill_box_descriptiontext {
-    font-family: "Roboto Mono";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.13rem;
-    color: black;
-    margin: 0; }
-
-    .skill_box_descriptionbox{
-    
-      margin-top: 13%;
-      margin-left: 15px;
-      width: 50%;
-
-    }
-
-    .skill_box_descriptionbox2{
-    
-      margin-top: 13%;
-      margin-left: 15px;
-
-    }
-
-    .up_button {
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 60px;
-      background-image: url("../images/up button.svg");
-      width: 174px;
-      height: 47px;
-    }
-
-    .footer {
-      width: 100vw;
-      background-color: $header_color;
-      height: $head_div_height;
-    }
-
-
-  .learn_more{
-    width: auto;
-    height: auto;
-    text-align: center;
-  }
-
-
-  @include respond(phone);
-  @include respond(mac13);
-  @include respond(mac15);
-  @include respond(mac16);
-  @include respond(tab_land);
-
+}
+
+.baby_box {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  //background-color: black;
+  z-index: 1;
+  scale: 0.9;
+  animation: pulse_photo_onload 2s ease-out forwards;
+}
+
+.baby_box:hover {
+  animation: pulse_photo 4s infinite;
+}
+
+//baby_box used for photo pulsing animation
+.baby_box::after {
+  content: "";
+  position: absolute;
+  margin-top: 50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: 85%;
+  //background-color: black;
+  border-radius: 50%;
+  border-width: 1px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: none;
+  border-bottom-style: none;
+  opacity: 0%;
+  z-index: -1;
+}
+
+.baby_box:hover::after {
+  content: "";
+  animation: pulse 4s infinite;
+}
+
+.main_text {
+  margin-top: 25%;
+  padding-top: 20px;
+  font-family: $header_font;
+  font-style: $header_font_style;
+  font-weight: $header_font_weight;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgba(25, 146, 232, 1);
+  width: 650px;
+  height: 154px;
+  text-align: center;
+}
+
+.projects_list {
+  width: 670px;
+  font-family: $secondary_font;
+  font-style: $secondary_font_style;
+  font-weight: $secondary_font_weight;
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 0;
+  // margin-left: 350px;
+  position: relative;
+  // top: 500px;
+}
+
+.project_list_frame {
+  width: 800px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+li {
+  // list-style-image: url(../images/list_item.svg);
+  background-image: url("../images/list_item.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 50px;
+  margin-top: 10px;
+  background-size: 30px;
+}
+
+.sample-slider {
+  width: 40%;
+  height: 600px;
+  z-index: 10;
+}
+
+.swiper_slide_size {
+  width: 22%;
+  background-color: azure;
+}
+
+.swiper {
+  height: 600px;
+  width: 1000px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper_card {
+  height: 490px;
+  width: 290px;
+  background-image: url("../images/skillbox_frame_mobile.svg");
+  // background-color: aqua;
+}
+
+.skill_cards_header {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-family: $header_font;
+  font-style: $header_font_style;
+  font-weight: $header_font_weight;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+}
+
+.skill_card_heading {
+  padding-top: 20px;
+  padding-left: 80px;
+  font-size: 16px;
+  font-family: $secondary_font;
+  font-style: $secondary_font_style;
+  font-weight: $secondary_font_weight;
+  color: #ffffff;
+}
+.skill_card_text {
+  font-family: $secondary_font;
+  font-style: $secondary_font_style;
+  font-weight: $secondary_font_weight;
+  margin-top: 40px;
+  margin-right: 2%;
+  font-size: 13px;
+  text-align: center;
+}
+.skill_card_pic {
+  height: 36%;
+  width: 250px;
+  margin-top: 15%;
+  margin-left: 8%;
+  // margin-right: auto;
+}
+
+//Skills container
+.skillsandprojects_container {
+  position: relative;
+  // bottom: 100%;
+  // // left: 50%;
+  // // width: 50vw;
+  height: 50%;
+  margin: 0;
+  background-color: white;
+  border: none;
+  animation: main_block_animation 2s ease-out forwards;
+}
+
+//Projects container
+.skillsandprojects_container2 {
+  position: relative;
+  bottom: 100%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  background-color: white;
+  border: none;
+  animation: main_block_animation 2s ease-out forwards;
+}
+
+p {
+  line-height: normal;
+}
+
+.secondLineTextClass {
+  line-height: 70%;
+}
+
+.secondLineText {
+  @include secondLineText;
+}
+
+.skills_container_row {
+  width: 100%;
+  height: $skills_head-row;
+}
+
+.skillsandprojects_container_row {
+  width: 100%;
+  height: 50%;
+}
+
+// row for float table in skills section
+.skills_container_row2 {
+  width: 100%;
+  height: calc((100% - #{$skills_head-row}) / 4);
+  border: none;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+// row for float table in projects section
+.skills_container_row3 {
+  width: 100%;
+  height: calc((100% - #{$skills_head-row}) / 4);
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+// Section in float table for Skills container
+.skillsandprojects-col {
+  width: calc(100% / 3);
+  height: 100%;
+  float: left;
+  background-color: white;
+  // color: black;
+  text-align: center;
+}
+
+.skillsandprojects-special-col {
+  width: calc(100% / 3);
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+}
+
+// Section in float table for Projects container
+.skillsandprojects-col-one {
+  width: inherit;
+  height: inherit;
+  float: left;
+  background-color: $header_text_color;
+  text-align: left;
+  @include sectionHeaderText();
+}
+
+//Used for header row line either in Skills and Projects containers
+.skillsandprojects-col-header {
+  width: inherit;
+  height: inherit;
+  float: left;
+  background-color: $header_text_color;
+  text-align: center;
+  @include sectionHeaderText();
+}
+
+.btn_special {
+  height: 40px;
+  width: 250px;
+}
+
+.button_test {
+  position: relative;
+  height: 40px;
+  width: 90%;
+}
+
+.button_test2 {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.button_text {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  // color: black;
+  margin: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.button_test:active {
+  animation: pulse_photo 1s ease-out;
+}
+
+.projects_section {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  background-color: $header_text_color;
+}
+
+.projects_header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0 auto auto 0;
+
+  @include sectionHeaderText();
+}
+
+// Used in Index js to style buttons
+.button_click {
+  border-width: 215px;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+}
+
+.button_projects_clicks {
+  border-bottom: 1px solid black;
+}
+
+.button_click_special {
+  border-width: 215px;
+  border-radius: 60px;
+  background-color: $header_color;
+  color: white;
+}
+
+// Contacts section
+.contacts_section {
+  text-align: center;
+  position: relative;
+  // margin-top: 550px;
+  // bottom: calc(100vh - (#{$main_div_height} + #{$head_div_height} + #{$contact_section_height}));
+  width: 100vw;
+  height: $contact_section_height;
+  animation: main_block_animation 2s ease-out forwards;
+}
+
+.contacts_header_container {
+  width: 100%;
+  height: $contacts_section_header_height;
+  text-align: center;
+}
+
+.contact_header {
+  position: fixed;
+  height: 30px;
+  width: 100vw;
+  //transform: translate(-25%);
+  margin-bottom: 0.2rem;
+  // display: block;
+
+  @include sectionHeaderText();
+}
+
+.contacts_section_row {
+  position: absolute;
+  top: 4rem;
+  padding-top: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: calc(100% - #{$contacts_section_header_height});
+  margin: 0 auto;
+  width: calc(#{$picture_width} * 4);
+  @include clearFix;
+}
+
+.contacts_section_col {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: calc((#{$picture_width} * 4) / 3);
+  text-align: center;
+  float: left;
+  margin: 0 auto;
+}
+
+.skill_box1 {
+  position: relative;
+  margin: 0 auto;
+  // margin-top: 20vh;
+  margin-bottom: 100px;
+  height: 485px;
+  width: 910px;
+  background-color: #ffffff;
+  background-image: url("../images/skill_description_box.svg");
+  z-index: 1;
+}
+
+.skill_boxes_heading {
+  text-align: center;
+  @include sectionHeaderText;
+  color: #ffffff;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.skill_box_iconbox {
+  position: absolute;
+  top: 54px;
+  width: 50%;
+  height: 90%;
+  left: 50%;
+  z-index: 2;
+}
+
+.skill_box_icon {
+  height: 60%;
+  width: 383px;
+  margin-top: 17%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  background-image: url("../images/project planning icon.svg");
+  z-index: 3;
+}
+
+.skill_box_icon2 {
+  height: 48%;
+  width: 383px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/team_management.svg");
+}
+
+.skill_box_icon3 {
+  height: 48%;
+  width: 356px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/ipad icon.svg");
+}
+
+.skill_box_icon4 {
+  height: 44.5%;
+  width: 201px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/dev advocate icon.svg");
+}
+
+.skill_box_icon5 {
+  height: 38.5%;
+  width: 261px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/manual testing icon.svg");
+}
+
+.skill_box_icon6 {
+  height: 37%;
+  width: 261px;
+  margin-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/research icon.svg");
+}
+
+.skill_box_descriptiontext {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.13rem;
+  color: black;
+  margin: 0;
+}
+
+.skill_box_descriptionbox {
+  margin-top: 13%;
+  margin-left: 15px;
+  width: 50%;
+}
+
+.skill_box_descriptionbox2 {
+  margin-top: 13%;
+  margin-left: 15px;
+}
+
+.up_button {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  background-image: url("../images/up button.svg");
+  width: 174px;
+  height: 47px;
+}
+
+.footer {
+  width: 100vw;
+  background-color: $header_color;
+  height: $head_div_height;
+}
+
+.learn_more {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+@include respond(phone);
+@include respond(mac13);
+@include respond(mac15);
+@include respond(mac16);
+@include respond(tab_land);
