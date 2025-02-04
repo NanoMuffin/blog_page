@@ -8,7 +8,9 @@
   <meta name="keywords" content="pm,project manager, cv">
   <meta name="author" content="Александр Сорока">
 
-  <link rel="stylesheet" href="./css/style.css"> 
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +26,7 @@
   <div class="head_div">
 
     <p class="name_text">
-      Александр Сорока
+      Привет, я Александр Сорока
       <span class="role_text">техлид в Sotkaonline.ru</span>
     </p>
 
@@ -39,197 +41,115 @@
 
     </div>
 
+
     <div class="skillsandprojects_container">
 
-      <div class="skills_container_row">
-
-        <div class="skillsandprojects-col-header"> 
-          
-          <p class="secondLineTextClass">Навыки <br> <span class="secondLineText"> Нажмите на навык <span> </p>
-        
-        </div>
-      
+      <div class="main_text">
+        Работаю техлидом образовательной платформы Сотка.<br/>В свободное время пишу хобби проекты и развиваю инженерные навыки. Помогаю в решении технических и инфраструктурных задач.
       </div>
 
-      <div class="skills_container_row2">
-
-        <div class="skillsandprojects-col"> 
-          <button class="btn button_test button_text button_click" id="skill1" name="button">Планирование проекта</button>
-        </div>
-        
-        <div class="skillsandprojects-col"> 
-          <button class="btn button_test button_text button_click" id="skill_2" type="button" name="button">Управление командой</button>
-        </div>
-        
-        <div class="skillsandprojects-col"> 
-          <button class="btn button_test button_text button_click" id="skill3" type="button" name="button">Документация проекта</button>
-        </div>
-      
+      </div>
       </div>
 
-      <div class="skills_container_row2">
 
-        <div class="skillsandprojects-col"> 
-          <button class="btn button_test button_text button_click" id="skill4" type="button" name="button">Dev advocate</button>
-        </div>
-       
-        <div class="skillsandprojects-col">
-         <button class="btn button_test button_text button_click" id="skill5"type="button" name="button">Ручное тестирование</button>
-        </div>
-        
-        <div class="skillsandprojects-col">
-          <button class="btn button_test button_text button_click" id="skill6" type="button" name="button">Исследование и анализ</button>
-        </div>
-      
-      </div>
+           <div class="contacts_section">
 
-      <div class="skills_container_row2">
-        <div class="skillsandprojects-special-col">
-          <button class="btn_special button_text button_click_special" id="tech_skills" type="button" name="button">технические навыки</button>
-         </div>
+        <div class="contact_header"> Контакты для связи </div>
+  
+    <div class="contacts_section_row">
+    <div class="contacts_section_col"> <a href="https://vk.com/nanomuffin"> <img class="vk_picture" src="./images/vk.png" alt=""> </a> </div>
+    <div class="contacts_section_col"> <a href="https://t.me/nanomuffin"> <img class="tg_picture" src="./images/tg.png" alt=""> </a> </div>
+    <div class="contacts_section_col"> <a href="mailto:nanomuffin@yandex.ru"> <img class="hh_picture" src="./images/email.png" alt=""> </a> </div>
+   </div> </div>
+  
+  
 
-      </div>
-      
-
-
+      <div class="project_list_frame">
+      <ul class="projects_list">
+        <li>C 2018 по 2020 работал в онлайн школе ЕГЭЛэнд, участвовал в запуске LMS платформы и интернет-магазина для учеников</li>
+        <li>C 2020 работаю в онлайн школе Сотка, вырос из проектного менеджера, который работал со студией-подрядчиком, до руководителя IT. Собрал внутреннюю команду разработки с нуля и сейчас руковожу всей технической частью в компании.</li>
+        <li>Успешно совмеющаю менеджмет и написание кода, считаю что каждый технический менеджер должен минимум 30% своего времени посвещать "работе руками", чтобы действительно понимать свою команду и продукта.</li>
+      </ul>
     </div>
 
-    <div class="skillsandprojects_container2">
-
-      <div class="skills_container_row">
-
-        <div class="skillsandprojects-col-header"> 
-      
-          <p class="secondLineTextClass">Проекты  <br> <span class="secondLineText"> Нажмите на проект <span></span></p>
-        
-        </div>
-      
+    
+ <div class="skill_cards_header"> Управленческие навыки </div>
+ <div class="swiper sample_slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Планирование проекта</div>
+      <div class="skill_card_text">
+        Умею планировать работы: <br>
+        -Выясню, что и как необходимо сделать <br>
+        -Определю последовательность работ и сроки <br>
+        -Найду исполнителей <br>
+        -Построю дорожную карту <br>
       </div>
-
-      <div class="skills_container_row3">
-        <div class="skillsandprojects-col-one">
-          <button class="button_test2 button_text button_projects_clicks" id="project1" type="button" name="button"> ЕГЭLAND образовательная платформа</button>
-        </div>
+      <img class="skill_card_pic" src="./images/project planning icon_mobile.svg" alt="project planning icon">
+    </div></div>
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Управление командой</div>
+      <div class="skill_card_text">
+        Умею работать с командой: <br>
+        -Kanban master (Jira, Trello и тд) <br>
+        -Знаю принципы Эджайл и Скрам <br>
+        -Каждое утро начинаю с созвона <br>
+        с командой <br>
+        -Черный пояс по постановке задач <br>
+        -Владею секретной формулой точной <br>
+        оценки работ <br>
       </div>
-      <div class="skills_container_row3">
-        <div class="skillsandprojects-col-one">
-          <button class="button_test2 button_text button_projects_clicks" id="project2" type="button" name="button"> ЕГЭLAND shop интернет-магазин</button>
-        </div>
+      <img class="skill_card_pic" src="./images/team_management_mobile.svg" alt="project planning icon">
+    </div></div>
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Документация проекта</div>
+      <div class="skill_card_text">
+      Умею документировать требования: <br>
+      -Зафиксирую все требования <br>
+      -Набросаю макет и передам дизайнеру <br>
+      -Напишу грамотное ТЗ с учетом всех <br>
+      требований и максимально <br>
+      понятное разработчикам <br>
       </div>
-      <div class="skills_container_row3">
-        <div class="skillsandprojects-col-one">
-          <button class="button_test2 button_text button_projects_clicks" id="project3" type="button" name="button"> СОТКА образовательная платформа</button></div>
-        </div>
+      <img class="skill_card_pic" src="./images/ipad icon_mobile.svg" alt="project planning icon">
+    </div></div>
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Developer advocate</div>
+      <div class="skill_card_text">
+        Умею рассказывать об обновлениях: <br>
+        -Напишу патч ноут <br>
+        -Запишу и смонтирую обучающее видео <br>
+        для сотрудников компании <br>
+        -Выслушаю и отвечу на похвалы и критику <br>
+        прошедшего релиза <br>
       </div>
-      </div>
-
-
-  <div class="contacts_section">
-
-      <div class="contact_header"> Контакты для связи </div>
-
-  <div class="contacts_section_row">
-  <div class="contacts_section_col"> <a href="https://vk.com/nanomuffin"> <img class="vk_picture" src="./images/vk.png" alt=""> </a> </div>
-  <div class="contacts_section_col"> <a href="https://t.me/nanomuffin"> <img class="tg_picture" src="./images/tg.png" alt=""> </a> </div>
-  <div class="contacts_section_col"> <a href="mailto:nanomuffin@yandex.ru"> <img class="hh_picture" src="./images/email.png" alt=""> </a> </div>
- </div> </div>
-
- <div class = "skill_box1" id="block1">
-  <div class="skill_boxes_heading" id="fix"> Планирование проекта </div>
-  <div class = "skill_box_iconbox">
-    <div class="skill_box_icon"> </div>
-  </div>
-  
-  <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
-  Умею планировать работы: <br>
- -Выясню, что и как необходимо сделать <br>
- -Определю последовательность работ и сроки <br>
- -Найду исполнителей <br>
- -Построю дорожную карту <br>
- -Буду отчитываться о статусе работ <br>
-</p> 
-</div>
-  </div>
-
-  <div class = "skill_box1" id="block2">
-   <p class="skill_boxes_heading"> Управление командой </p>
-   <div class = "skill_box_iconbox">
-     <div class="skill_box_icon2"> </div>
-   </div>
-   
-   <div class="skill_box_descriptionbox2"> <p class="skill_box_descriptiontext">
-  Умею работать с командой: <br>
-  -Kanban master (Jira, Trello и тд) <br>
-  -Знаю принципы Эджайл и Скрам <br>
-  -Каждое утро начинаю с созвона <br>
-  с командой <br>
-  -Черный пояс по постановке задач <br>
-  -Владею секретной формулой точной <br>
-  оценки работ <br>
-</p>  </div>
-   </div>
-
-   <div class = "skill_box1" id="block3">
-     <p class="skill_boxes_heading"> Документация проекта </p>
-     <div class = "skill_box_iconbox">
-       <div class="skill_box_icon3"> </div>
-     </div>
-     
-     <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
-    Умею документировать требования: <br>
-    -Зафиксирую все требования <br>
-    -Набросаю макет и передам дизайнеру <br>
-    -Напишу грамотное ТЗ с учетом всех <br>
-    требований и максимально <br>
-    понятное разработчикам <br>
-  </p>  </div>
-     </div>
-
-     <div class = "skill_box1" id="block4">
-       <p class="skill_boxes_heading"> Developer advocate </p>
-       <div class = "skill_box_iconbox">
-         <div class="skill_box_icon4"> </div>
-       </div>
-       
-       <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
-       Умею рассказывать об обновлениях: <br>
-       -Напишу патч ноут <br>
-       -Запишу и смонтирую обучающее видео <br>
-       для сотрудников компании <br>
-       -Выслушаю и отвечу на похвалы и критику <br>
-       прошедшего релиза <br>
-    </p>  </div>
-       </div>
-
-       <div class = "skill_box1" id="block5">
-         <p class="skill_boxes_heading"> Ручное тестирование </p>
-         <div class = "skill_box_iconbox">
-           <div class="skill_box_icon5"> </div>
-         </div>
-         
-         <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
+      <img class="skill_card_pic" src="./images/dev advocate icon_mobile.svg" alt="project planning icon">
+    </div></div>
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Ручное тестирование</div>
+      <div class="skill_card_text">
          Умею проводить ручное тестирование: <br>
          -Знаю как пользоваться Chrome DevTools <br>
          -Понимаю,что такое http запросы и чем <br>
          ошибка 404 отличается от ошибки 402 <br>
-      </p>  </div>
-         </div>
-
-         <div class = "skill_box1" id="block6">
-           <p class="skill_boxes_heading"> Исследование и анализ </p>
-           <div class = "skill_box_iconbox">
-             <div class="skill_box_icon6"> </div>
-           </div>
-           
-           <div class="skill_box_descriptionbox"> <p class="skill_box_descriptiontext">
+      </div>
+      <img class="skill_card_pic" src="./images/manual testing icon_mobile.svg" alt="project planning icon">
+    </div></div>
+    <div class="swiper-slide"><div class="swiper_card">
+      <div class="skill_card_heading">Исследование и анализ</div>
+      <div class="skill_card_text">
            Умею анализировать: <br>
            -Изучаю рынок и конкурентов, <br>
            опредялю сильные стороны продукта <br>
            -Определяю цели бизнеса и потребности <br>
            пользователей <br>
            -Прописываю пользовательские сценарии <br>
-        </p>  </div>
-           </div>
+      </div>
+      <img class="skill_card_pic" src="./images/research icon_mobile.svg" alt="project planning icon">
+    </div></div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>   
 
            <div class = "up_button"></div>
            <div class = "tech_skills_block">
@@ -268,11 +188,33 @@
               
             </div>
             </div>
-           </div>
+
+
 
            <div class="footer"></div>
+           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+           <script>
+          const swiper = new Swiper('.sample_slider', {
+            slidesPerView: 1.25,
+            observer: true,
+            observeParents: true,
+            parallax:true,
+            spaceBetween: 5,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+            // when window width is >= 320px
+            1024: {
+            slidesPerView: 3.5,
+             }},
+          });
+          // var slide2 = document.getElementById('slide2')
+          // swiper.addSlide(slide2)
+          // console.log(swiper.slides())
+          </script>
            <script src="./index.js" charset="utf-8"></script>
-
 </body>
 
 

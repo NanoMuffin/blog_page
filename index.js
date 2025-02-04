@@ -43,58 +43,12 @@ function chooseProject(key) {
   projectSkillsMap[key].forEach( i => document.getElementById(i).classList.add('button_click'))
 }
 
-// Object.keys(projectSkillsMap).map((i) => {  
-//   var switcher = document.getElementById(i)
-//   console.log(switcher)
-//   switcher.addEventListener('click', () => { switcher.classList.add('button_projects_clicks'), chooseProject(i) })
-// })
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const swiper = new Swiper('.sample_slider', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: false,
-//     speed: 2400,
-//     parallax: true,
-
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
-//   swiper.addSlide(1,"<div class='swiper-slide'>Slide 1</div>")
-//   console.log(swiper.slides)
-// })
-
-
 
 
 
 var up_btn = document.getElementsByClassName("up_button")[0];
 
 const headDiv = document.querySelectorAll(".head_div")[0]
-
-function onLoad() {
-  
-  // function makeIt() {
-  // Object.keys(projectSkillsMap).forEach(i => document.getElementById(i).classList.remove('button_projects_clicks'))
-  // allBtns.map((i) => i.forEach(btn => document.getElementById(btn).classList.remove('button_click')))
-  // }
-
-  // Object.keys(projectBlocksMap).forEach((el) => {
-  //   var skill =  document.getElementById(el)
-  //   var block = document.getElementById(projectBlocksMap[el])
-  //   console.log(skill)
-  //   console.log(block)
-  //   skill.addEventListener('click', () => skilid(block))
-
-  // })
-
-  setTimeout(() => makeIt(), 2000);
-}
-
-onLoad();
 
 
 var body_selector = document.querySelector("body")
@@ -137,17 +91,6 @@ function SafariFIx() {
   }
 };
 
-// SafariFIx()
-
-if (screenWidth < 900) {
-  text1.innerHTML = 'Умею планировать работы: <br> -Выясню, что и как <br> необходимо сделать <br> -Определю последовательность <br>  работ и сроки <br> -Найду исполнителей <br> -Построю дорожную карту <br> -Буду отчитываться  <br> о статусе работ <br>';
-  text2.innerHTML = 'Умею работать с командой: <br> -Kanban master <br> (Jira, Trello и тд) <br> -Знаю принципы Эджайл и Скрам <br> -Каждое утро начинаю <br> с созвона с командой <br> -Черный пояс по постановке задач <br> -Владею секретной формулой <br> точной оценки работ <br>';
-  text3.innerHTML = 'Умею документировать требования: <br> -Зафиксирую все требования <br> -Набросаю макет <br> и передам дизайнеру <br> -Напишу грамотное ТЗ <br> с учетом всех требований <br> и максимально понятное разработчикам <br>';
-  text4.innerHTML = 'Умею рассказывать об обновлениях: <br> -Напишу патч ноут <br> -Запишу и смонтирую <br> обучающее видео <br> для сотрудников компании <br> -Выслушаю и отвечу на похвалы <br> и критику прошедшего релиза <br>';
-  text5.innerHTML = 'Умею проводить ручное тестирование: <br> -Знаю как пользоваться <br> Chrome DevTools <br> -Понимаю,что такое http  <br> запросы и чем  ошибка 404 отличается  <br> от ошибки 402 <br>';
-  text6.innerHTML = 'Умею анализировать: <br> -Изучаю рынок и конкурентов, <br> определяю сильные <br> стороны продукта <br> -Определяю цели бизнеса <br> и потребности пользователей <br> -Прописываю пользовательские сценарии <br>';
-}
-
 const techSkills = ['JavaScript','TypeScript','CSS','PHP','SQL','React','Laravel','Gitlab','Docker','Grafana','Mysql','MongoDB','Redis']
 const match = {
   'Frontend' : [1,2,3,6],
@@ -169,10 +112,6 @@ function makeAccent(key) {
     document.getElementById(el).classList.remove('tech_skills_block_item_accent')
   }})
 }
-
-// console.log(Object.entries(match))
-// makeAccent('Frontend')
-
 
   switchers.map((i) => {  
     var switcher = document.getElementById(i)

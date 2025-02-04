@@ -151,6 +151,17 @@
       //     height: 445vh;
       //   }
 
+      .name_text {
+        font-size: 1rem;
+
+      }
+
+      .role_text {
+        font-size: 0.7rem;
+        padding-top: 0.2rem;
+      }
+      
+      
       .skill_cards_header {
         width: 100%;
       }
@@ -270,7 +281,8 @@
 
       .contacts_section {
         bottom: 0px;
-        top: 40px;
+        top: 10px;
+        height: 13rem;
       }
 
       .project_list_frame {
@@ -284,10 +296,13 @@
 
       .main_text {
         width: 301px;
-        height: 104px;
+        height: 85px;
+        width: 80vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 0.9rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 0.85rem;
         margin-top: 35%;
       }
 
