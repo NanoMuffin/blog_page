@@ -304,19 +304,18 @@ body {
   height: inherit;
   margin: 0;
   width: 100%;
-  padding-left: 3.43rem;
-  padding-top: 1.2rem;
+  padding-left: 30px;
+  padding-top: 0.8rem;
   font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
 .role_text {
   position: absolute;
-  padding-left: 3.12rem;
-  padding-top: 0.8rem;
+  padding-top: 0.3rem;
   margin: 0;
   font-family: "Roboto Mono";
   font-style: normal;
@@ -951,12 +950,24 @@ p {
 }
 @media screen and (max-width: 900px) {
   .name_text {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    padding-top: 6%;
   }
 
   .role_text {
-    font-size: 0.6;
-    padding-top: 0.2rem;
+    padding-left: 0px;
+    padding-top: 0.1rem;
+  }
+
+  .contacts_section {
+    height: 10rem;
+    bottom: 0px;
+    top: 10px;
+  }
+
+  .contacts_section_row {
+    top: 2rem;
+    margin-top: 0px;
   }
 
   .skill_cards_header {
@@ -1078,12 +1089,6 @@ p {
 
   .skillsandprojects-special-col {
     width: auto;
-  }
-
-  .contacts_section {
-    bottom: 0px;
-    top: 10px;
-    height: 13rem;
   }
 
   .project_list_frame {

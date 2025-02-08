@@ -3,7 +3,7 @@
   font-family: $header_font;
   font-style: $header_font_style;
   font-weight: $header_font_weight;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: $header_text_color;
 }
 
@@ -152,13 +152,26 @@
       //   }
 
       .name_text {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+        padding-top: 6%;
 
       }
 
       .role_text {
-        font-size: 0.6;
-        padding-top: 0.2rem;
+        // font-size: 0.6;
+        padding-left: 0px;
+        padding-top: 0.1rem;
+      }
+
+      .contacts_section {
+        height: 10rem;
+        bottom: 0px;
+        top: 10px;
+      }
+
+      .contacts_section_row {
+        top: 2rem;
+        margin-top: 0px;
       }
       
       
@@ -282,12 +295,6 @@
 
       .skillsandprojects-special-col {
         width: auto;
-      }
-
-      .contacts_section {
-        bottom: 0px;
-        top: 10px;
-        height: 13rem;
       }
 
       .project_list_frame {
